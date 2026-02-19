@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <link
       type="image/x-icon"
       href="../../assets/icons/Favicon.png"
@@ -12,7 +15,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header__container">
+      <div class="container header__container flex">
         <div class="header__logo">
           <a class="logo-link" href="#">
             <img
@@ -22,26 +25,26 @@
             />
           </a>
         </div>
-        <nav id="header-menu" class="header__menu">
+        <nav id="header-menu" class="header__menu flex">
           <ul class="menu-list reset-list flex">
             <li class="menu-list-item">
-              <a class="header-link" href="#">gifts</a>
+              <a class="header-link activ-page" href="#">about</a>
             </li>
             <li class="menu-list-item">
-              <a class="header-link" href="#">about</a>
+              <a class="header-link" href="#">map</a>
             </li>
             <li class="menu-list-item">
-              <a class="header-link" href="#">best</a>
+              <a class="header-link" href="#">zoos</a>
             </li>
             <li class="menu-list-item">
-              <a class="header-link" href="#">contacts</a>
+              <a class="header-link" href="#">contact us</a>
             </li>
             <li class="menu-list-item">
               <a class="header-link" href="#">design</a>
             </li>
           </ul>
         </nav>
-        <ul class="social-links-list reset-list">
+        <ul class="social-links-list reset-list flex">
           <li class="social-links-item">
             <a
               class="social-link"
