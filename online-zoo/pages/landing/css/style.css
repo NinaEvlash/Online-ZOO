@@ -88,14 +88,12 @@ svg {
   --white-color: #ffffff;
   --black-color: #000000;
   --orange-color: #f58021;
+  --hover-orange-color: #d26004;
   --teal-color: #00a092;
   --purple-color: #20113d;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   color: var(--dark-color);
@@ -127,6 +125,10 @@ body {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .header {
   width: 100%;
   background-color: var(--orange-color);
@@ -135,7 +137,7 @@ body {
 .header__container {
   justify-content: space-between;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 26px;
 }
 
 .header__menu {
@@ -143,14 +145,35 @@ body {
 }
 
 .header-link {
+  position: relative;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 150%;
+  transition: color 0.3s ease-in-out;
+}
+
+.header-link:not(.activ-page):hover {
+  color: var(--teal-color);
+}
+
+.header-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: var(--teal-color);
+  transition: width 0.3s ease;
 }
 
 .header-link.activ-page {
   color: var(--teal-color);
+}
+
+.header-link:not(.activ-page):hover::after {
+  width: 100%;
 }
 
 .menu-list {
@@ -162,6 +185,71 @@ body {
   gap: 30px;
 }
 
+.social-links-item {
+  transition: opacity 0.3s ease;
+}
+
+.social-links-item:hover {
+  opacity: 0.5;
+}
+
 .header__burger {
   display: none;
+}
+
+.header__right__block {
+  gap: 68px;
+}
+
+/*======watch======*/
+
+.watch {
+  padding-top: 137px;
+  padding-bottom: 131px;
+  background-image: url(../../../assets/images/bg-view-section.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.watch__content {
+  flex-direction: column;
+  gap: 41px;
+  align-items: flex-start;
+}
+
+.watch__title {
+  margin: 0;
+  width: 890px;
+  text-transform: uppercase;
+  color: var(--teal-color);
+  font-weight: 800;
+  font-size: 82px;
+  line-height: 117%;
+  letter-spacing: -1%;
+}
+
+.watch__descr {
+  margin: 0;
+  width: 430px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.watch__btn {
+  width: 240px;
+  color: var(--white-color);
+  padding-top: 26px;
+  padding-bottom: 26px;
+  background-color: var(--orange-color);
+  padding-right: 10px;
+  background-image: url(../../../assets/icons/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 26px center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.watch__btn:hover {
+  background-color: var(--hover-orange-color);
 }
