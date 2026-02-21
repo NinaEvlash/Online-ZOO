@@ -129,6 +129,24 @@ body {
   display: none;
 }
 
+.section-title {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 100%;
+  color: var(--teal-color);
+}
+
+.section-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+/*======header======*/
+
 .header {
   width: 100%;
   background-color: var(--orange-color);
@@ -220,10 +238,7 @@ body {
 }
 
 .watch__title {
-  margin: 0;
   width: 890px;
-  text-transform: uppercase;
-  color: var(--teal-color);
   font-weight: 800;
   font-size: 82px;
   line-height: 117%;
@@ -231,11 +246,7 @@ body {
 }
 
 .watch__descr {
-  margin: 0;
   width: 430px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
 }
 
 .watch__btn {
@@ -273,21 +284,7 @@ body {
 
 .info__top__title,
 .info__bottom__title {
-  margin: 0;
   margin-bottom: 50px;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 54px;
-  line-height: 100%;
-  color: var(--teal-color);
-}
-
-.info__top__text,
-.info__bottom__text {
-  margin: 0;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
 }
 
 .info__top__descr,
@@ -308,4 +305,72 @@ body {
 
 .info__bottom__imege {
   background-image: url(../../../assets/images/birds-img.png);
+}
+
+/*======donation======*/
+
+.donation {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--purple-color);
+}
+
+.donation__descr {
+  width: 900px;
+}
+
+.donation__content {
+  justify-content: space-between;
+}
+
+.donation__title {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 42px;
+  color: var(--white-color);
+}
+
+.donation__text {
+  width: 610px;
+  color: var(--white-color);
+}
+
+.donation__btn__descr {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 130%;
+  color: var(--white-color);
+}
+
+.donation__button {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--white-color);
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.donation-button-text {
+  padding: 26px 14px;
+}
+
+.donation-button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 26px 14px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: var(--orange-color);
+  transition: background-color 0.3s ease;
+}
+
+.donation-button-icon:hover {
+  background-color: var(--hover-orange-color);
 }
