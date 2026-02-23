@@ -52,8 +52,10 @@ const animalsArray = [
 const container = document.getElementById('sliders-container');
 
 function createCard(animal) {
-  const card = document.createElement('div');
+  const card = document.createElement('a');
   card.classList.add('card-animal', 'flex');
+
+  card.href = '#';
 
   const cardImage = document.createElement('div');
   cardImage.classList.add('card-animal-image');
@@ -81,8 +83,8 @@ function createCard(animal) {
 
   descr.textContent = animal.text;
 
-  const button = document.createElement('button');
-  button.classList.add('card-animal-button', 'reset-btn', 'section-btn');
+  const button = document.createElement('div');
+  button.classList.add('card-animal-button');
 
   const textBtn = document.createElement('span');
   const iconBtn = document.createElement('span');

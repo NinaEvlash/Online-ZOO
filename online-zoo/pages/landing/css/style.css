@@ -482,6 +482,15 @@ button:disabled {
   background-color: var(--purple-color);
   color: var(--white-color);
   padding-bottom: 74px;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card-animal:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
 }
 
 .card-animal-image {
@@ -533,5 +542,14 @@ button:disabled {
   align-items: center;
   gap: 10px;
   font-size: 20px;
+  padding: 28px;
   color: var(--orange-color);
+  background-color: transparent;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-animal-button:hover {
+  background-color: var(--orange-color);
+  color: var(--white-color);
 }
