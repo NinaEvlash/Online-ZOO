@@ -49,17 +49,17 @@ const payArray = [
 
 const payContainer = document.getElementById('pay-container');
 
-function createPayCard(pay) {
+function createPayCard(pay, index) {
   const card = document.createElement('li');
-  card.classList.add('pay__card');
+  card.classList.add('pay__card', 'reset-list');
 
   const cardNumar = document.createElement('div');
   cardNumar.classList.add('pay__card-numar');
 
-  cardNumar.textContent = '0__';
+  cardNumar.textContent = `0${index + 1}`;
 
   const cardContent = document.createElement('div');
-  cardContent.classList.add('pay__card-content');
+  cardContent.classList.add('pay__card-content', 'flex');
 
   const cardPayImg = document.createElement('img');
   cardPayImg.classList.add('pay__card-img');
@@ -81,7 +81,9 @@ function createPayCard(pay) {
   title.textContent = pay.title;
 
   const text = document.createElement('p');
-  text.classList.add('pay-text');
+  text.classList.add('pay-text', 'section-text');
+
+  text.textContent = pay.text;
 
   cardPayDescr.append(svgWrapper, title, text);
   cardContent.append(cardPayImg, cardPayDescr);
@@ -90,7 +92,7 @@ function createPayCard(pay) {
   return card;
 }
 
-payArray.forEach((pay) => {
-  const card = createPayCard(pay);
+for (let i = 0; i < payArray.length; i += 1) {
+  const card = createPayCard(payArray[i], i);
   payContainer.append(card);
-});
+}

@@ -567,9 +567,61 @@ button:disabled {
   margin-bottom: 100px;
 }
 
+.pay__card-numar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 130%;
+}
+
+.pay__card-numar::after {
+  content: '';
+  display: block;
+  flex-grow: 1;
+  height: 1px;
+  background: var(--white-color);
+  margin-left: 93px;
+}
+
+.pay__card__container {
+  flex-direction: column;
+  gap: 116px;
+  color: var(--white-color);
+  margin-bottom: 50px;
+}
+
+.pay__card-content {
+  height: 364px;
+  gap: 160px;
+  justify-content: space-between;
+}
+
+.pay__card-img {
+  width: 560px;
+  height: 100%;
+}
+
+.pay__card-descr {
+  width: 560px;
+}
+
+.pay-icon {
+  margin-bottom: 30px;
+}
+
+.pay-title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 130%;
+}
+
 .pay__bottom {
   display: flex;
-  margin: 0 auto;
+  margin-left: 60%;
   align-items: center;
   gap: 10px;
   padding: 28px;
