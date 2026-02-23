@@ -99,6 +99,12 @@ body {
   color: var(--black-color);
 }
 
+button:disabled {
+  opacity: 0.3;
+  pointer-events: none;
+  cursor: default;
+}
+
 .container {
   max-width: 1920px;
   min-width: 320px;
@@ -426,6 +432,12 @@ body {
   flex-direction: column;
 }
 
+.slider__buttons {
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+}
+
 .prev-button,
 .next-button {
   padding: 28px;
@@ -442,10 +454,6 @@ body {
   color: var(--white-color);
 }
 
-.prev-button {
-  margin-right: 55px;
-}
-
 .prev-button svg {
   transform: rotate(180deg);
 }
@@ -453,9 +461,9 @@ body {
 .slider__container-cards {
   margin-top: 50px;
   margin-bottom: 100px;
-  width: 100%;
+  margin-right: -510px;
+  width: calc(100% + 260px);
   overflow: hidden;
-  margin-right: -260px;
 }
 
 .cards-sliders-container {

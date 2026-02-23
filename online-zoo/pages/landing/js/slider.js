@@ -1,20 +1,21 @@
 const prevBtn = document.getElementById('prev-btn');
 const nextBtn = document.getElementById('next-btn');
+const cardContainer = document.querySelector('.slider__container-cards');
+const cards = document.querySelectorAll('.card-animal');
 
 const cardWidth = 440 + 40;
-const cards = document.querySelectorAll('.card-animal');
-const visibleWidth = document.querySelector(
-  '.slider__container-cards'
-).offsetWidth;
-
+const visibleWidth = cardContainer.offsetWidth;
+const cardsLength = cards.length / 2;
+const allCardsWidth = cardWidth * cardsLength;
+const maxPosition = -(allCardsWidth - visibleWidth);
 let currentPosition = 0;
-const maxPosition = -(cardWidth * cards.length - visibleWidth);
 
 nextBtn.addEventListener('click', () => {
   if (currentPosition > maxPosition) {
     currentPosition -= cardWidth;
     container.style.transform = `translateX(${currentPosition}px)`;
   }
+  updateButtons();
 });
 
 prevBtn.addEventListener('click', () => {
@@ -22,4 +23,19 @@ prevBtn.addEventListener('click', () => {
     currentPosition += cardWidth;
     container.style.transform = `translateX(${currentPosition}px)`;
   }
+  updateButtons();
 });
+
+function updateButtons() {
+  if (currentPosition >= 0) {
+    prevBtn.disabled = true;
+  } else {
+    prevBtn.disabled = false;
+  }
+
+  if (currentPosition <= maxPosition) {
+    nextBtn.disabled = true;
+  } else {
+    nextBtn.disabled = false;
+  }
+}

@@ -6,28 +6,16 @@ const animalsArray = [
     text: 'Native to central China, giant pandas have come to symbolize vulnerable species.',
   },
   {
-    name: 'Andy',
-    image: '../../assets/images/lemur.png',
-    title: 'Madagascarian Lemur ',
-    text: 'Lemurs are considered the world’s most endangered group of mammals.',
-  },
-  {
-    name: 'Glen',
-    image: '../../assets/images/gorilla.png',
-    title: 'Gorilla in Congo ',
-    text: 'Variety of snacks very important for the healthy life of gorillas and his plenty of babies.',
-  },
-  {
-    name: 'Mike',
-    image: '../../assets/images/crocodile.png',
-    title: 'Chinese Alligator',
-    text: 'From nose to tail, belly to back, hard scales protect this petite alligator.',
-  },
-  {
     name: 'Sam & Lora',
     image: '../../assets/images/eagles.png',
     title: 'West End Bald Eagles',
     text: 'Pair of eagle parents lay and protect eggs, feed their chicks and teach them to hunt and fly.',
+  },
+  {
+    name: 'Andy',
+    image: '../../assets/images/lemur.png',
+    title: 'Madagascarian Lemur ',
+    text: 'Lemurs are considered the world’s most endangered group of mammals.',
   },
   {
     name: ' Liz',
@@ -36,10 +24,22 @@ const animalsArray = [
     text: 'The elevated walkways bring you to eye level with the koalas as they perch in their forest.',
   },
   {
+    name: 'Glen',
+    image: '../../assets/images/gorilla.png',
+    title: 'Gorilla in Congo ',
+    text: 'Variety of snacks very important for the healthy life of gorillas and his plenty of babies.',
+  },
+  {
     name: 'Shake',
     image: '../../assets/images/lion.png',
     title: 'African Lion',
     text: 'Lions roam the savannas and grasslands of Africa, hunting and raising cubs in the pride.',
+  },
+  {
+    name: 'Mike',
+    image: '../../assets/images/crocodile.png',
+    title: 'Chinese Alligator',
+    text: 'From nose to tail, belly to back, hard scales protect this petite alligator.',
   },
   {
     name: ' Senja',
