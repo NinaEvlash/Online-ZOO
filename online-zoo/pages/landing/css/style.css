@@ -152,10 +152,24 @@ button:disabled {
 }
 
 .section-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 28px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: transparent;
   font-weight: 600;
   font-size: 18px;
   line-height: 100%;
   text-transform: uppercase;
+}
+
+.block-text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 130%;
 }
 
 /*======header======*/
@@ -620,17 +634,47 @@ button:disabled {
 }
 
 .pay__bottom {
-  display: flex;
   margin-left: 60%;
-  align-items: center;
-  gap: 10px;
-  padding: 28px;
   color: var(--white-color);
   background-color: var(--orange-color);
-  border-radius: 5px;
   transition: background-color 0.3s ease-in-out;
 }
 
 .pay__bottom:hover {
   background-color: var(--hover-orange-color);
+}
+
+/*======users======*/
+.users {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-color: var(--purple-color);
+}
+
+.users__container {
+  gap: 40px;
+}
+
+.users__content {
+  width: 560px;
+  color: var(--white-color);
+}
+
+.users__title {
+  width: 440px;
+  margin-bottom: 50px;
+  color: var(--white-color);
+}
+
+.users__slider__prev-btn,
+.users__slider__next-btn {
+  color: var(--white-color);
+  border-color: var(--white-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.users__slider__prev-btn:hover,
+.users__slider__next-btn:hover {
+  color: var(--black-color);
+  background-color: var(--white-color);
 }
