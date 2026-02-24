@@ -1,12 +1,12 @@
 function createButton(text, extraClass) {
-  const button = document.createElement('button');
-  button.classList.add(`${extraClass}__button`, 'reset-btn', 'section-btn');
+  const button = document.createElement("button");
+  button.classList.add(`${extraClass}__button`, "reset-btn", "section-btn");
 
-  const spanText = document.createElement('span');
+  const spanText = document.createElement("span");
   spanText.classList.add(`${extraClass}-button-text`);
   spanText.textContent = text;
 
-  const spanIcon = document.createElement('span');
+  const spanIcon = document.createElement("span");
   spanIcon.classList.add(`${extraClass}-button-icon`);
   spanIcon.innerHTML = `
   <svg
@@ -29,22 +29,26 @@ function createButton(text, extraClass) {
   return button;
 }
 
-const sectionWatch = document.getElementById('watch-btn');
-const buttonWatch = createButton('VIEW LIVE CAM', 'watch');
+const sectionWatch = document.getElementById("watch-btn");
+const buttonWatch = createButton("VIEW LIVE CAM", "watch");
 sectionWatch.append(buttonWatch);
 
-const sectionSlider = document.getElementById('slider-container');
-const buttonSlider = createButton('choose your favourite', 'slider');
+const sectionSlider = document.getElementById("slider-container");
+const buttonSlider = createButton("choose your favourite", "slider");
 sectionSlider.append(buttonSlider);
 
-const sectionDonation = document.getElementById('donation-btn');
-const buttonDonation = createButton('$ 25 Donation', 'donation');
+const sectionDonation = document.getElementById("donation-btn");
+const buttonDonation = createButton("$ 25 Donation", "donation");
 sectionDonation.append(buttonDonation);
 
-const sectionPay = document.getElementById('pay-section');
-const buttonPay = createButton('donate now', 'pay');
+const sectionPay = document.getElementById("pay-section");
+const buttonPay = createButton("donate now", "pay");
 sectionPay.append(buttonPay);
 
-const sectionUsers = document.getElementById('users-section');
-const buttonUsers = createButton('leave feedback', 'users');
+const sectionUsers = document.getElementById("users-section");
+const buttonUsers = createButton("leave feedback", "users");
 sectionUsers.append(buttonUsers);
+
+const sectionCareTop = document.getElementById("care-top");
+const buttonCare = createButton("choose your favourite", "care");
+sectionCareTop.append(buttonCare);

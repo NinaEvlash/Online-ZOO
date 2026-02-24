@@ -711,3 +711,110 @@ button:disabled {
   text-transform: uppercase;
   margin-top: 46px;
 }
+
+/*======care======*/
+.care {
+  padding-top: 136px;
+  padding-bottom: 150px;
+}
+
+.care__title {
+  margin: 0 auto;
+  width: 655px;
+  text-align: center;
+}
+
+.care__text {
+  margin: 0 auto;
+  width: 537px;
+  color: var(--purple-color);
+  margin-top: 50px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.care__animal__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 40px;
+  grid-template-areas:
+    "img img card1"
+    "card2 card3 card4";
+}
+
+.care-img {
+  grid-area: img;
+}
+
+.card-1 {
+  grid-area: card1;
+}
+
+.card-2 {
+  grid-area: card2;
+}
+
+.card-3 {
+  grid-area: card3;
+}
+
+.card-4 {
+  grid-area: card4;
+}
+
+.care-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-top-img {
+  height: 373px;
+}
+
+.care-card {
+  padding-bottom: 50px;
+}
+
+.card-care-button {
+  padding: 26px;
+  color: var(--orange-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-care-button:hover {
+  background-color: var(--orange-color);
+  color: var(--white-color);
+}
+
+.card-care-text {
+  width: 390px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.care__button {
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 26px;
+  border-color: var(--purple-color);
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.care__button:hover {
+  color: var(--white-color);
+  background-color: var(--purple-color);
+}
+
+.care__container__bottom {
+  margin-top: 150px;
+  width: 1400px;
+  height: 652px;
+  background-image: url(../../../assets/images/bg-care-bottom.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
