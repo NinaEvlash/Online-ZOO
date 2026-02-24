@@ -1,6 +1,6 @@
 function createSliderButton(type, customClass) {
-  const button = document.createElement('button');
-  button.classList.add(`${type}-button`, 'reset-btn', customClass);
+  const button = document.createElement("button");
+  button.classList.add(`${type}-button`, "reset-btn", customClass);
 
   button.id = `${type}-btn`;
 
@@ -24,18 +24,17 @@ function createSliderButton(type, customClass) {
   return button;
 }
 
-const sliderButtonsMeetPets = document.getElementById('pets-slider-buttons');
+const sliderButtonsMeetPets = document.getElementById("pets-slider-buttons");
 
-const prevButtonPets = createSliderButton('prev', 'pets__slider__prev-btn');
+const prevButtonPets = createSliderButton("prev", "pets__slider__prev-btn");
 prevButtonPets.disabled = true;
-const nextButtonPets = createSliderButton('next', 'pets__slider__next-btn');
+const nextButtonPets = createSliderButton("next", "pets__slider__next-btn");
 
 sliderButtonsMeetPets.append(prevButtonPets, nextButtonPets);
 
-const sliderButtonsUsers = document.getElementById('users-slider-buttons');
+const sliderButtonsUsers = document.getElementById("users-slider-buttons");
 
-const prevButtonUsers = createSliderButton('prev', 'users__slider__prev-btn');
-prevButtonUsers.disabled = true;
-const nextButtonUsers = createSliderButton('next', 'users__slider__next-btn');
+const prevButtonUsers = createSliderButton("prev", "users__slider__prev-btn");
+const nextButtonUsers = createSliderButton("next", "users__slider__next-btn");
 
 sliderButtonsUsers.append(prevButtonUsers, nextButtonUsers);
