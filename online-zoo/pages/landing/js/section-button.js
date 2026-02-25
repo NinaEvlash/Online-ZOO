@@ -38,7 +38,7 @@ const buttonSlider = createButton("choose your favourite", "slider");
 sectionSlider.append(buttonSlider);
 
 const sectionDonation = document.getElementById("donation-btn");
-const buttonDonation = createButton("$ 25 Donation", "donation");
+const buttonDonation = createButton("$ Donation Amount", "donation");
 sectionDonation.append(buttonDonation);
 
 const sectionPay = document.getElementById("pay-section");

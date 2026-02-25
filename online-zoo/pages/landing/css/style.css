@@ -94,6 +94,7 @@ svg {
 }
 
 body {
+  overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: var(--black-color);
@@ -229,7 +230,7 @@ button:disabled {
   color: var(--teal-color);
 }
 
-.menu-list {
+.header__menu__list {
   gap: 48px;
 }
 
@@ -329,10 +330,13 @@ button:disabled {
 .info__top__imege {
   background-image: url(../../../assets/images/welcome-img.png);
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .info__bottom__imege {
   background-image: url(../../../assets/images/birds-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*======donation======*/
@@ -487,7 +491,6 @@ button:disabled {
   border-radius: 5px;
   background-color: var(--purple-color);
   color: var(--white-color);
-  padding-bottom: 74px;
   cursor: pointer;
   transition:
     transform 0.3s ease,
@@ -501,14 +504,15 @@ button:disabled {
 
 .card-animal-image {
   position: relative;
-  width: 440px;
-  height: 436px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
 }
 
-.card-animal-image img {
+.animal-foto {
   width: 100%;
   height: 100%;
-  display: block;
+  object-fit: cover;
 }
 
 .animal-name {
@@ -516,42 +520,29 @@ button:disabled {
   top: 0;
   left: 0;
   margin: 0;
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 130%;
   color: var(--white-color);
   background: var(--purple-color);
   padding: 12px 19px;
   border-radius: 5px;
 }
 
-.card-animal-title {
-  margin: 0;
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 130%;
-  margin-top: 30px;
-  margin-bottom: 20px;
+.card-animal-content {
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 45px 50px 45px;
+  flex-grow: 1;
+  gap: 20px;
 }
 
 .card-animal-descr {
-  width: 380px;
-  margin: 0;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
-  margin-bottom: 30px;
+  text-align: center;
 }
 
 .card-animal-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 20px;
   padding: 28px;
+  align-self: center;
+  margin-top: auto;
   color: var(--orange-color);
-  background-color: transparent;
-  border-radius: 5px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -645,17 +636,16 @@ button:disabled {
   background-image: url(../../../assets/images/bg-feedback-section.png);
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .users__container {
-  margin-right: -260px;
   gap: 40px;
   justify-content: space-between;
 }
 
 .users__content {
-  width: 560px;
+  flex: 0 1 560px;
   color: var(--white-color);
 }
 
@@ -694,16 +684,22 @@ button:disabled {
   background-color: var(--teal-color);
 }
 
+.users__slider-container {
+  transform: translateX(115px);
+}
+
 .user__slider-cards {
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: repeat(2, auto);
+  grid-auto-columns: 515px;
   gap: 30px;
   margin-bottom: 60px;
 }
 
 .user__card {
-  width: 515px;
+  width: 100%;
+  overflow: hidden;
   padding: 70px 50px;
   background-color: var(--white-color);
 }
@@ -777,30 +773,46 @@ button:disabled {
   object-fit: cover;
 }
 
-.card-top-img {
-  height: 373px;
+.care-card {
+  flex-direction: column;
+  height: 100%;
 }
 
-.care-card {
-  padding-bottom: 50px;
+.card-top {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.card-top-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 30px 45px 50px 45px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 20px;
+}
+
+.card-care-text {
+  text-align: center;
 }
 
 .card-care-button {
   padding: 26px;
   color: var(--orange-color);
+  align-self: center;
+  margin-top: auto;
   transition: all 0.3s ease-in-out;
 }
 
 .card-care-button:hover {
   background-color: var(--orange-color);
   color: var(--white-color);
-}
-
-.card-care-text {
-  width: 390px;
-  margin-top: 30px;
-  margin-bottom: 50px;
-  text-align: center;
 }
 
 .care__button {
@@ -817,14 +829,14 @@ button:disabled {
   background-color: var(--purple-color);
 }
 
-.care__container__bottom {
-  margin-top: 150px;
-  width: 1400px;
-  height: 652px;
-  background-image: url(../../../assets/images/bg-care-bottom.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: contain;
+.decor {
+  padding: 150px 260px;
+}
+
+.decor-img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /*======footer======*/
@@ -845,7 +857,7 @@ button:disabled {
   gap: 65px;
 }
 
-.footer-nav-listm {
+.footer__menu__list {
   align-items: center;
 }
 
@@ -874,4 +886,8 @@ button:disabled {
 .footer__info__list {
   gap: 50px;
   color: var(--white-color);
+}
+
+.footer__social__list {
+  gap: 40px;
 }

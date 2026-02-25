@@ -54,7 +54,12 @@ function createCareCard(care, index) {
 
   button.append(textBtn, iconBtn);
 
-  card.append(cardImageContainer, descr, button);
+  const content = document.createElement("div");
+  content.classList.add("card-content");
+
+  content.append(descr, button);
+
+  card.append(cardImageContainer, content);
 
   return card;
 }
