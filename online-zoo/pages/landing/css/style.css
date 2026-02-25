@@ -171,6 +171,38 @@ button:disabled {
   line-height: 130%;
 }
 
+.nav-link {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link.activ-page {
+  cursor: not-allowed;
+}
+
+.nav-link:not(.activ-page):hover {
+  color: var(--teal-color);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: var(--teal-color);
+  transition: width 0.3s ease;
+}
+
+.nav-link:not(.activ-page):hover::after {
+  width: 100%;
+}
+
 /*======header======*/
 
 .header {
@@ -189,36 +221,12 @@ button:disabled {
 }
 
 .header-link {
-  position: relative;
-  text-transform: uppercase;
-  font-weight: 600;
   font-size: 19px;
   line-height: 150%;
-  transition: color 0.3s ease-in-out;
-}
-
-.header-link:not(.activ-page):hover {
-  color: var(--teal-color);
-}
-
-.header-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0;
-  height: 2px;
-  background-color: var(--teal-color);
-  transition: width 0.3s ease;
 }
 
 .header-link.activ-page {
   color: var(--teal-color);
-  cursor: not-allowed;
-}
-
-.header-link:not(.activ-page):hover::after {
-  width: 100%;
 }
 
 .menu-list {
@@ -817,4 +825,53 @@ button:disabled {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+/*======footer======*/
+
+.footer {
+  padding-top: 70px;
+  padding-bottom: 36px;
+  background-color: var(--purple-color);
+}
+
+.footer__container__top {
+  gap: 100px;
+  padding-bottom: 70px;
+  border-bottom: 1px solid var(--white-color);
+}
+
+.footer__logo {
+  gap: 65px;
+}
+
+.footer-nav-listm {
+  align-items: center;
+}
+
+.footer__button {
+  color: var(--white-color);
+  padding: 26px;
+  border-color: var(--white-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__button:hover {
+  background-color: var(--teal-color);
+  border-color: var(--teal-color);
+  color: var(--purple-color);
+}
+
+.footer-link {
+  color: var(--white-color);
+}
+
+.footer__container__bottom {
+  padding-top: 37px;
+  justify-content: space-between;
+}
+
+.footer__info__list {
+  gap: 50px;
+  color: var(--white-color);
 }

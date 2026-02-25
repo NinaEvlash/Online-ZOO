@@ -52,3 +52,7 @@ sectionUsers.append(buttonUsers);
 const sectionCareTop = document.getElementById("care-top");
 const buttonCare = createButton("choose your favourite", "care");
 sectionCareTop.append(buttonCare);
+
+const footerTop = document.getElementById("footer-top");
+const buttonFooter = createButton("donate for volunteers", "footer");
+footerTop.append(buttonFooter);
