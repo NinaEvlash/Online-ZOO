@@ -1,7 +1,7 @@
-const prevBtn = document.getElementById('prev-btn');
-const nextBtn = document.getElementById('next-btn');
-const cardContainer = document.querySelector('.slider__container-cards');
-const cards = document.querySelectorAll('.card-animal');
+const prevBtn = document.getElementById("prev-btn");
+const nextBtn = document.getElementById("next-btn");
+const cardContainer = document.getElementById("sliders-container");
+const cards = document.querySelectorAll(".card-animal");
 
 const cardWidth = 440 + 40;
 const visibleWidth = cardContainer.offsetWidth;
@@ -10,18 +10,18 @@ const allCardsWidth = cardWidth * cardsLength;
 const maxPosition = -(allCardsWidth - visibleWidth);
 let currentPosition = 0;
 
-nextBtn.addEventListener('click', () => {
+nextBtn.addEventListener("click", () => {
   if (currentPosition > maxPosition) {
     currentPosition -= cardWidth;
-    container.style.transform = `translateX(${currentPosition}px)`;
+    cardContainer.style.transform = `translateX(${currentPosition}px)`;
   }
   updateButtons();
 });
 
-prevBtn.addEventListener('click', () => {
+prevBtn.addEventListener("click", () => {
   if (currentPosition < 0) {
     currentPosition += cardWidth;
-    container.style.transform = `translateX(${currentPosition}px)`;
+    cardContainer.style.transform = `translateX(${currentPosition}px)`;
   }
   updateButtons();
 });

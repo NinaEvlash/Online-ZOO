@@ -1,68 +1,3 @@
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src:
-    local(""),
-    url("../../assets/fonts/montserrat-v25-latin_cyrillic-regular.woff2")
-      format("woff2"),
-    url("../../assets/fonts/montserrat-v25-latin_cyrillic-regular.woff")
-      format("woff");
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src:
-    local(""),
-    url("../../assets/fonts/montserrat-v25-latin_cyrillic-500.woff2")
-      format("woff2"),
-    url("../../assets/fonts/montserrat-v25-latin_cyrillic-500.woff")
-      format("woff");
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src:
-    local(""),
-    url("../../assets/fonts/montserrat-v25-latin_cyrillic-600.woff2")
-      format("woff2"),
-    url("../../assets/fonts/montserrat-v25-latin_cyrillic-600.woff")
-      format("woff");
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src:
-    local(""),
-    url("../../assets/fonts/montserrat-v25-latin_cyrillic-700.woff2")
-      format("woff2"),
-    url("../../assets/fonts/montserrat-v25-latin_cyrillic-700.woff")
-      format("woff");
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src:
-    local(""),
-    url("../../assets/fonts/montserrat-v25-latin_cyrillic-800.woff2")
-      format("woff2"),
-    url("../../assets/fonts/montserrat-v25-latin_cyrillic-800.woff")
-      format("woff");
-}
-
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -252,14 +187,14 @@ button:disabled {
 }
 
 .header__right__block {
-  gap: 68px;
+  gap: 56px;
 }
 
 /*======watch======*/
 
 .watch {
   padding-top: 137px;
-  padding-bottom: 131px;
+  padding-bottom: 132px;
   background-image: url(../../../assets/images/bg-view-section.png);
   background-position: top center;
   background-repeat: no-repeat;
@@ -281,11 +216,12 @@ button:disabled {
 }
 
 .watch__descr {
-  width: 430px;
+  width: 410px;
+  line-height: 130%;
 }
 
 .watch__button {
-  padding: 26px;
+  padding: 27px;
   color: var(--white-color);
   background-color: var(--orange-color);
   transition: background-color 0.3s ease-in-out;
@@ -313,37 +249,41 @@ button:disabled {
 
 .info__top__title,
 .info__bottom__title {
-  margin-bottom: 50px;
+  margin-bottom: 63px;
 }
 
 .info__top__descr,
 .info__bottom__descr {
   width: 560px;
+  padding-top: 80px;
+}
+
+.info__bottom__descr {
+  padding-top: 120px;
 }
 
 .info__top__imege,
 .info__bottom__imege {
   width: 800px;
   height: 531px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 }
 
 .info__top__imege {
   background-image: url(../../../assets/images/welcome-img.png);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .info__bottom__imege {
   background-image: url(../../../assets/images/birds-img.png);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 /*======donation======*/
 
 .donation {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 36px;
   background-color: var(--purple-color);
 }
 
@@ -369,7 +309,6 @@ button:disabled {
 
 .donation__btn__descr {
   margin: 0;
-  margin-bottom: 10px;
   font-weight: 500;
   font-size: 26px;
   line-height: 130%;
@@ -377,20 +316,24 @@ button:disabled {
 }
 
 .donation__button {
+  gap: 0;
   margin-right: -1px;
   border-color: var(--white-color);
   color: var(--white-color);
 }
 
 .donation-button-text {
-  padding: 26px 14px;
+  padding: 24px 14px;
 }
 
 .donation-button-icon {
-  padding: 26px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 27px;
+  background-color: var(--orange-color);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  background-color: var(--orange-color);
   transition: background-color 0.3s ease;
 }
 
@@ -402,7 +345,7 @@ button:disabled {
 
 .slider {
   padding-top: 136px;
-  padding-bottom: 150px;
+  padding-bottom: 153px;
 }
 
 .slider__container {
@@ -411,11 +354,11 @@ button:disabled {
 }
 
 .slider__container__title {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .slider__container__text {
-  width: 840px;
+  width: 915px;
   margin: 0;
   margin-bottom: 100px;
   font-weight: 500;
@@ -450,7 +393,7 @@ button:disabled {
 
 .prev-button,
 .next-button {
-  padding: 28px;
+  padding: 20px;
   color: var(--purple-color);
   border: 1px solid var(--purple-color);
   background-color: transparent;
@@ -471,7 +414,7 @@ button:disabled {
 .slider__container-cards {
   margin-top: 50px;
   margin-bottom: 100px;
-  margin-right: -510px;
+  margin-right: -478px;
   width: calc(100% + 260px);
   overflow: hidden;
 }
@@ -486,6 +429,7 @@ button:disabled {
 
 .card-animal {
   width: 440px;
+  height: 740px;
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
@@ -505,7 +449,7 @@ button:disabled {
 .card-animal-image {
   position: relative;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 3;
   overflow: hidden;
 }
 
@@ -564,10 +508,15 @@ button:disabled {
   margin-bottom: 100px;
 }
 
+.pay__card {
+  flex-direction: column;
+  gap: 54px;
+}
+
 .pay__card-numar {
   display: flex;
   align-items: center;
-  margin-bottom: 100px;
+  gap: 86px;
   font-weight: 500;
   font-size: 26px;
   line-height: 130%;
@@ -575,49 +524,64 @@ button:disabled {
 
 .pay__card-numar::after {
   content: "";
-  display: block;
-  flex-grow: 1;
+  flex: 1;
   height: 1px;
   background: var(--white-color);
-  margin-left: 93px;
 }
 
 .pay__card__container {
   flex-direction: column;
-  gap: 116px;
+  gap: 130px;
   color: var(--white-color);
-  margin-bottom: 50px;
+  margin-bottom: 76px;
 }
 
 .pay__card-content {
-  height: 364px;
-  gap: 160px;
-  justify-content: space-between;
+  gap: 158px;
+  align-items: flex-start;
+}
+
+.pay__card-descr,
+.pay__card-img-wrapper {
+  flex: 1;
+  max-width: 560px;
+}
+
+.pay__card-img-wrapper {
+  transform: translateY(39px);
+  height: 357px;
+  overflow: hidden;
 }
 
 .pay__card-img {
-  width: 560px;
+  width: 100%;
   height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .pay__card-descr {
-  width: 560px;
+  transform: translateY(42px);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .pay-icon {
-  margin-bottom: 30px;
+  margin-top: 16px;
+  margin-bottom: 5px;
 }
 
 .pay-title {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 49px;
   font-weight: 500;
   font-size: 26px;
   line-height: 130%;
 }
 
 .pay__button {
-  margin-left: 60%;
+  margin-left: 52%;
   padding: 28px;
   color: var(--white-color);
   background-color: var(--orange-color);
@@ -632,7 +596,7 @@ button:disabled {
 .users {
   margin-top: -2px;
   padding-top: 100px;
-  padding-bottom: 150px;
+  padding-bottom: 145px;
   background-image: url(../../../assets/images/bg-feedback-section.png);
   background-position: top center;
   background-repeat: no-repeat;
@@ -645,13 +609,15 @@ button:disabled {
 }
 
 .users__content {
-  flex: 0 1 560px;
+  flex: none;
+  width: 560px;
   color: var(--white-color);
 }
 
 .users__title {
   width: 440px;
-  margin-bottom: 50px;
+  line-height: 105%;
+  margin-bottom: 48px;
   color: var(--white-color);
 }
 
@@ -673,8 +639,8 @@ button:disabled {
 }
 
 .users__button {
-  margin-top: 376px;
-  padding: 26px;
+  margin-top: 367px;
+  padding: 27px 76px;
   border-color: var(--white-color);
   color: var(--white-color);
   transition: background-color 0.3s ease-in-out;
@@ -684,23 +650,20 @@ button:disabled {
   background-color: var(--teal-color);
 }
 
-.users__slider-container {
-  transform: translateX(115px);
-}
-
 .user__slider-cards {
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: repeat(2, auto);
   grid-auto-columns: 515px;
-  gap: 30px;
+  gap: 40px;
   margin-bottom: 60px;
+  /*transform: translateX(115px);*/
 }
 
 .user__card {
   width: 100%;
   overflow: hidden;
-  padding: 70px 50px;
+  padding: 60px 50px;
   background-color: var(--white-color);
 }
 
@@ -726,6 +689,7 @@ button:disabled {
   margin: 0 auto;
   width: 655px;
   text-align: center;
+  line-height: 66px;
 }
 
 .care__text {
@@ -775,12 +739,12 @@ button:disabled {
 
 .care-card {
   flex-direction: column;
-  height: 100%;
+  height: 658px;
 }
 
 .card-top {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 3;
   overflow: hidden;
 }
 
@@ -795,7 +759,7 @@ button:disabled {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  gap: 20px;
+  gap: 47px;
 }
 
 .card-care-text {
@@ -830,26 +794,34 @@ button:disabled {
 }
 
 .decor {
-  padding: 150px 260px;
+  padding-bottom: 142px;
+}
+
+.decor__container {
+  overflow: hidden;
+  width: 1400px;
+  height: 652px;
+  margin: 0 auto;
 }
 
 .decor-img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 
 /*======footer======*/
 
 .footer {
-  padding-top: 70px;
+  padding-top: 86px;
   padding-bottom: 36px;
   background-color: var(--purple-color);
 }
 
 .footer__container__top {
   gap: 100px;
-  padding-bottom: 70px;
+  padding-bottom: 65px;
   border-bottom: 1px solid var(--white-color);
 }
 
@@ -858,12 +830,14 @@ button:disabled {
 }
 
 .footer__menu__list {
-  align-items: center;
+  gap: 47px;
+  padding-top: 8px;
 }
 
 .footer__button {
+  align-items: start;
   color: var(--white-color);
-  padding: 26px;
+  padding: 17px 31px;
   border-color: var(--white-color);
   transition: all 0.3s ease-in-out;
 }
