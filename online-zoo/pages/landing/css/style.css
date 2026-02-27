@@ -1,4 +1,6 @@
 html {
+  overflow-x: hidden;
+  width: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -30,6 +32,7 @@ svg {
 
 body {
   overflow-x: hidden;
+  width: 100%;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: var(--black-color);
@@ -47,7 +50,7 @@ button:disabled {
   margin-left: auto;
   margin-right: auto;
   padding-left: 260px;
-  padding-right: 260px;
+  padding-right: 247px;
 }
 
 .reset-list {
@@ -449,8 +452,9 @@ button:disabled {
 .card-animal-image {
   position: relative;
   width: 100%;
+  height: 436px;
   aspect-ratio: 3 / 3;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .animal-foto {
@@ -513,7 +517,7 @@ button:disabled {
   gap: 54px;
 }
 
-.pay__card-numar {
+.pay__card-number {
   display: flex;
   align-items: center;
   gap: 86px;
@@ -522,7 +526,7 @@ button:disabled {
   line-height: 130%;
 }
 
-.pay__card-numar::after {
+.pay__card-number::after {
   content: "";
   flex: 1;
   height: 1px;
@@ -548,9 +552,20 @@ button:disabled {
 }
 
 .pay__card-img-wrapper {
-  transform: translateY(39px);
   height: 357px;
   overflow: hidden;
+}
+
+.pay__card:first-child .pay__card-img-wrapper {
+  transform: translateY(40px);
+}
+
+.pay__card:nth-child(2) .pay__card-img-wrapper {
+  transform: translateY(40px) scaleX(-1);
+}
+
+.pay__card:last-child .pay__card-img-wrapper {
+  transform: translateY(34px);
 }
 
 .pay__card-img {
@@ -573,6 +588,7 @@ button:disabled {
 }
 
 .pay-title {
+  width: 502px;
   margin: 0;
   margin-bottom: 49px;
   font-weight: 500;
@@ -657,12 +673,13 @@ button:disabled {
   grid-auto-columns: 515px;
   gap: 40px;
   margin-bottom: 60px;
-  /*transform: translateX(115px);*/
 }
 
 .user__card {
-  width: 100%;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 515px;
+  height: 457px;
   padding: 60px 50px;
   background-color: var(--white-color);
 }
@@ -745,7 +762,6 @@ button:disabled {
 .card-top {
   width: 100%;
   aspect-ratio: 3 / 3;
-  overflow: hidden;
 }
 
 .card-top-img {

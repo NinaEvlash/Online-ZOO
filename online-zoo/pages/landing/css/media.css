@@ -32,6 +32,10 @@
     background-size: cover;
   }
 
+  .users {
+    background-position: right;
+  }
+
   .users__container {
     flex-direction: column;
     align-items: flex-start;
@@ -50,11 +54,16 @@
   }
 
   .users__slider-container {
-    margin: 0;
+    margin: 9px;
   }
 
   .user__slider-buttons {
-    margin-bottom: 97px;
+    margin-left: auto;
+    margin-bottom: 50px;
+  }
+
+  .users__button {
+    margin-left: 97px;
   }
 }
 
@@ -117,7 +126,8 @@
   }
 
   .donation {
-    padding-bottom: 92px;
+    padding-top: 59px;
+    padding-bottom: 57px;
   }
 
   .donation__content {
@@ -126,7 +136,7 @@
   }
 
   .donation__descr {
-    width: 511px;
+    width: 575px;
   }
 
   .donation__text {
@@ -134,7 +144,12 @@
   }
 
   .slider {
-    padding-top: 100px;
+    padding-top: 105px;
+    padding-bottom: 150px;
+  }
+
+  .slider__container__text {
+    width: 836px;
   }
 
   .prev-button,
@@ -144,14 +159,121 @@
 
   .slider__container-cards {
     margin-right: -771px;
+    margin-top: 24px;
+  }
+
+  .slider__container__title {
+    margin-bottom: 40px;
+    padding-left: 94px;
+  }
+
+  .slider__button {
+    margin-top: -59px;
+  }
+
+  .cards-sliders-container {
+    gap: 23px;
+  }
+
+  .card-animal {
+    width: 455px;
+    height: 716px;
+  }
+
+  .card-animal-content {
+    padding-top: 13px;
+  }
+
+  .pay {
+    padding-top: 156px;
+  }
+
+  .pay__title {
+    padding-left: 58px;
+  }
+
+  .pay__card__container {
+    gap: 100px;
+    margin-bottom: 111px;
+  }
+
+  .pay__card {
+    gap: 48px;
+  }
+
+  .pay__card-number {
+    gap: 64px;
+  }
+
+  .pay__card:first-child .pay__card-img-wrapper {
+    transform: translateY(64px);
+  }
+
+  .pay__card:nth-child(2) .pay__card-img-wrapper {
+    transform: translateY(20px) scaleX(-1);
+  }
+
+  .pay__card:last-child .pay__card-img-wrapper {
+    transform: translateY(15px);
   }
 
   .pay__card-content {
     gap: 20px;
   }
 
+  .pay__card-descr {
+    align-items: center;
+  }
+
+  .pay__card:first-child .pay__card-descr {
+    transform: translateY(6px);
+  }
+
+  .pay__card:nth-child(2) .pay__card-descr {
+    transform: translateY(30px);
+  }
+
+  .pay__card:last-child .pay__card-descr {
+    transform: translateY(21px);
+  }
+
+  .play-icon {
+    margin: 0;
+  }
+
+  .pay-title {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .pay-text {
+    text-align: center;
+  }
+
+  .pay__button {
+    margin-left: 51%;
+    padding: 26px 45px;
+  }
+
+  .users__content {
+    max-width: 577px;
+  }
+
+  .users__title {
+    margin-bottom: 19px;
+    line-height: 124%;
+  }
+
+  .user__slider-cards {
+    transform: translateX(97px) translateY(9px);
+  }
+
   .user__slider-buttons {
     justify-content: flex-end;
+  }
+
+  .care {
+    padding-top: 150px;
   }
 
   .care__animal__cards {
@@ -160,17 +282,45 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "img img"
-      "card1 card2"
-      "card3 card4";
+      "card1 card3"
+      "card2 card4";
+    grid-template-rows: 470px 1fr 1fr;
+    gap: 19px;
+  }
+
+  .card-top {
+    height: 373px;
+  }
+
+  .care__title {
+    padding-left: 44px;
+  }
+
+  .care__text {
+    width: 610px;
+    margin-top: 29px;
+    margin-bottom: 47px;
+    padding-left: 116px;
+  }
+
+  .care-card {
+    width: 455px;
+    height: 639px;
   }
 
   .decor {
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 162px;
+  }
+
+  .footer {
+    padding-top: 78px;
   }
 
   .footer__container__top {
     gap: 35px;
+    padding-bottom: 74px;
   }
 
   .footer__logo {

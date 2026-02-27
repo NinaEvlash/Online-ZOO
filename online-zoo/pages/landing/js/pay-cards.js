@@ -54,7 +54,7 @@ function createPayCard(pay, index) {
   card.classList.add("pay__card", "flex");
 
   const cardNumar = document.createElement("div");
-  cardNumar.classList.add("pay__card-numar");
+  cardNumar.classList.add("pay__card-number");
 
   cardNumar.textContent = `0${index + 1}`;
 
