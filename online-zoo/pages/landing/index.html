@@ -31,20 +31,18 @@
             />
           </a>
         </div>
-        <div class="header__right__block flex">
-          <nav id="header-menu" class="header__menu flex">
-            <ul
-              id="header-nav-list"
-              class="header__menu__list reset-list flex"
-            ></ul>
-          </nav>
+        <nav id="header-menu" class="header__menu flex">
           <ul
-            id="header-social-list"
-            class="social-links-list reset-list flex"
+            id="header-nav-list"
+            class="header__menu__list reset-list flex"
           ></ul>
-          <div class="header__burger">
-            <span></span>
-          </div>
+        </nav>
+        <ul
+          id="header-social-list"
+          class="header__social__list social-links-list reset-list flex"
+        ></ul>
+        <div class="header__burger">
+          <span></span>
         </div>
       </div>
     </header>
@@ -103,14 +101,14 @@
         <div class="container">
           <div class="donation__content flex">
             <div class="donation__descr">
-              <div class="donation__title section-title">
+              <h2 class="donation__title section-title">
                 Your donation makes a difference!
-              </div>
-              <div class="donation__text section-text">
+              </h2>
+              <p class="donation__text section-text">
                 The Online Zoo's animal webcams are some of the most famous on
                 the internet. Tune in to watch your favourite animals — live,
                 24/7!
-              </div>
+              </p>
             </div>
             <div id="donation-btn" class="donation__btn__content">
               <p class="donation__btn__descr">Quick Donate</p>
@@ -152,8 +150,8 @@
         </div>
       </section>
       <section class="users">
-        <div class="container">
-          <div id="users-section" class="users__container flex">
+        <div id="users-section" class="users__section container">
+          <div class="users__container flex">
             <div class="users__content">
               <h2 class="users__title section-title">what our users think</h2>
               <p class="users__text block-text">
@@ -165,11 +163,11 @@
             <div class="users__slider-container">
               <ul id="users-slider" class="user__slider-cards reset-list"></ul>
             </div>
-            <div
-              id="users-slider-buttons"
-              class="user__slider-buttons slider__buttons flex"
-            ></div>
           </div>
+          <div
+            id="users-slider-buttons"
+            class="user__slider-buttons slider__buttons flex"
+          ></div>
         </div>
       </section>
       <section class="care">
@@ -189,13 +187,12 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="decor">
+
         <div class="decor__container">
           <img
             src="../../assets/images/bg-care-bottom.jpg"
             alt=""
-            class="decor-img"
+            class="Touch the animal"
           />
         </div>
       </section>
@@ -213,14 +210,14 @@
               <a class="logo-link" href="#">
                 <img
                   class="logo-img"
-                  src="../../assets/icons/Yem Digital.png"
+                  src="../../assets/icons/Yem-Digital.png"
                   alt="Footer logo Yem Digital"
                 />
               </a>
               <a class="logo-link" href="#">
                 <img
                   class="logo-img"
-                  src="../../assets/icons/rs_school_js logo.png"
+                  src="../../assets/icons/rs-logo.png"
                   alt="Footer logo RS Shool"
                 />
               </a>
@@ -256,5 +253,6 @@
     <script defer src="js/care-cards.js"></script>
     <script defer src="js/slider.js"></script>
     <script defer src="js/pay-cards.js"></script>
+    <script defer src="js/burger.js"></script>
   </body>
 </html>

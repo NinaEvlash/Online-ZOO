@@ -2,8 +2,6 @@ function createSliderButton(type, customClass) {
   const button = document.createElement("button");
   button.classList.add(`${type}-button`, "reset-btn", customClass);
 
-  button.id = `${type}-btn`;
-
   button.innerHTML = `
   <svg
     width="25"

@@ -1,5 +1,5 @@
-const prevBtn = document.getElementById("prev-btn");
-const nextBtn = document.getElementById("next-btn");
+const prevBtn = document.querySelector(".prev-button");
+const nextBtn = document.querySelector(".next-button");
 const cardContainer = document.getElementById("sliders-container");
 const cards = document.querySelectorAll(".card-animal");
 
