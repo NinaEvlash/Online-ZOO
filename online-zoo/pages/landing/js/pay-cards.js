@@ -9,6 +9,8 @@ const payArray = [
     `,
     title: "Your donation has an impact",
     text: "Providing our animals with high-quality nutritious diets is just one element of animal care at our Zoo. We do all the best so that our animals can eat food similar to what they might find in their natural habitats while making sure they get the right mix of nutrients, proteins, and vitamins to be happy and healthy. Please help us provide nutritious food for our animals by donating. The generosity of people like you can help us make sure that our animals enjoy good food that keeps them in great condition.",
+    textsm:
+      "Providing our animals with high-quality nutritious diets is just one element of animal care at our Zoo. We do all the best so that our animals can eat food similar to what they might find in their natural habitats while making sure they get the right mix of nutrients, proteins, and vitamins to be happy and healthy. Please help us provide nutritious food for our animals by donating.",
   },
   {
     image: "../../assets/images/pay2.png",
@@ -20,6 +22,8 @@ const payArray = [
     `,
     title: "Make a donation",
     text: "You can donate through your credit card without any fees. It is easy and safe. We do not keep donors personal information on an online network. Choose an amount to give and the pets name if needed. One of the most effective ways you can give is by making regular donations.",
+    textsm:
+      "You can donate through your credit card without any fees. It is easy and safe. We do not keep donors' personal information on an online network. Choose an amount to give and the pet's name if needed. ",
   },
   {
     image: "../../assets/images/pay3.png",
@@ -44,6 +48,8 @@ const payArray = [
     `,
     title: "Bring your food charity — straight to your favorites pets.",
     text: "After your donation, the animal receives its favorite foods. You can support your favorite animals or any animal you care about and make a real personal impact. Never doubt that your donation can make a difference even if it is small. ",
+    textsm:
+      "After your donation, the animal receives its favorite foods. You can support your favorite animals or any animal you care about and make a real personal impact. Never doubt that your donation can make a difference even if it is small. ",
   },
 ];
 
@@ -83,14 +89,18 @@ function createPayCard(pay, index) {
   const text = document.createElement("p");
   text.classList.add("pay-text", "section-text");
 
+  const textSm = document.createElement("p");
+  textSm.classList.add("pay-text-320", "section-text", "hidden");
+
   text.textContent = pay.text;
+  textSm.textContent = pay.textsm;
 
   const imgContent = document.createElement("div");
   imgContent.classList.add("pay__card-img-wrapper");
 
   imgContent.append(cardPayImg);
 
-  cardPayDescr.append(svgWrapper, title, text);
+  cardPayDescr.append(svgWrapper, title, text, textSm);
   cardContent.append(imgContent, cardPayDescr);
   card.append(cardNumar, cardContent);
 
