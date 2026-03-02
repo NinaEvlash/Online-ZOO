@@ -53,7 +53,7 @@ const container = document.getElementById("sliders-container");
 
 function createCard(animal) {
   const card = document.createElement("a");
-  card.classList.add("card-animal", "flex");
+  card.classList.add("card-animal-slider", "card-animal", "flex");
 
   card.href = "#";
 
