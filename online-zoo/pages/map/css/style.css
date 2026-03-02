@@ -27,6 +27,7 @@
 }
 
 .map__container {
+  position: relative;
   overflow: hidden;
   width: 1400px;
   height: 912px;
@@ -38,4 +39,59 @@
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.map__marker {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.map__marker img {
+  transition: filter 0.3s ease;
+}
+
+.map__marker:hover img {
+  filter: brightness(130%);
+}
+
+.map__marker--eagles {
+  top: 35%;
+  left: 7%;
+}
+
+.map__marker--crocodile {
+  top: 43%;
+  left: 19%;
+}
+
+.map__marker--lion {
+  top: 46%;
+  left: 40%;
+}
+
+.map__marker--gorilla {
+  top: 50%;
+  left: 50%;
+}
+
+.map__marker--lemur {
+  top: 63%;
+  left: 55%;
+}
+
+.map__marker--panda {
+  top: 37%;
+  left: 66%;
+}
+
+.map__marker--tiger {
+  top: 54%;
+  left: 70%;
+}
+
+.map__marker--koala {
+  top: 66%;
+  left: 79%;
 }
