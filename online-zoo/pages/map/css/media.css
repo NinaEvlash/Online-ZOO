@@ -1,16 +1,34 @@
-@media (max-width: 1200px) {
-    
+@media (max-width: 1780px) {
+  .header__container {
+    padding-left: 96px;
+    padding-right: 102px;
+  }
+
+  .map {
+    padding-top: 30px;
+    padding-bottom: 104px;
+  }
+
+  .map__title {
+    margin-bottom: 17px;
+  }
+
+  .map__container {
+    width: 1198px;
+    height: 777px;
+  }
+
+  .footer__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 @media (max-width: 768px) {
-    
 }
 
 @media (max-width: 640px) {
-    
 }
 
 @media (max-width: 400px) {
-   
 }
-
