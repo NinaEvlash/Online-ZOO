@@ -5,15 +5,15 @@ const linksArray = [
   },
   {
     page: "map",
-    href: "#",
+    href: "pages/map/index.html",
   },
   {
     page: "zoos",
-    href: "#",
+    href: "pages/zoos/index.html",
   },
   {
     page: "contact us",
-    href: "#",
+    href: "pages/contacts/index.html",
   },
   {
     page: "design",
