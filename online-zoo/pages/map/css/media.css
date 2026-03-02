@@ -41,6 +41,11 @@
     width: 639px;
     height: 415px;
   }
+
+  .map__marker img {
+    width: 42px;
+    height: 60px;
+  }
 }
 
 @media (max-width: 635px) {
@@ -65,6 +70,11 @@
   .map__container {
     width: 319px;
     height: 233px;
+  }
+
+  .map__marker img {
+    width: 35px;
+    height: 50px;
   }
 
   .footer__container {

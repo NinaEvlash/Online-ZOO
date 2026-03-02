@@ -57,8 +57,8 @@
 }
 
 .map__marker--eagles {
-  top: 35%;
-  left: 7%;
+  top: 41%;
+  left: 9%;
 }
 
 .map__marker--crocodile {
@@ -67,13 +67,13 @@
 }
 
 .map__marker--lion {
-  top: 46%;
-  left: 40%;
+  top: 48%;
+  left: 39%;
 }
 
 .map__marker--gorilla {
   top: 50%;
-  left: 50%;
+  left: 47%;
 }
 
 .map__marker--lemur {
@@ -93,5 +93,5 @@
 
 .map__marker--koala {
   top: 66%;
-  left: 79%;
+  left: 80%;
 }
