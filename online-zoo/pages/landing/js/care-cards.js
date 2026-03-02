@@ -1,18 +1,18 @@
 const caresArray = [
   {
-    image: "../../assets/images/card-1.png",
+    image: "assets/images/card-1.png",
     text: "Your $30 could give Lucas a slice of panda cake, made with our secret recipe.",
   },
   {
-    image: "../../assets/images/card-2.png",
+    image: "assets/images/card-2.png",
     text: " Your $150 will help to care for Senja, a Sumatran tiger, for three weeks.",
   },
   {
-    image: "../../assets/images/card-3.png",
+    image: "assets/images/card-3.png",
     text: "With your support, we can give Andy his favorite fruits. Especially when it's not fruit season in its natural habitat.",
   },
   {
-    image: "../../assets/images/card-4.png",
+    image: "assets/images/card-4.png",
     text: "Sam & Lora have hatched and raised numerous young and will be happy with your help.",
   },
 ];

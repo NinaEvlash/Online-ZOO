@@ -1,6 +1,6 @@
 const payArray = [
   {
-    image: "../../assets/images/pay1.png",
+    image: "assets/images/pay1.png",
     name: "Animal image",
     svg: `
     <svg width="106" height="80" viewBox="0 0 106 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -13,7 +13,7 @@ const payArray = [
       "Providing our animals with high-quality nutritious diets is just one element of animal care at our Zoo. We do all the best so that our animals can eat food similar to what they might find in their natural habitats while making sure they get the right mix of nutrients, proteins, and vitamins to be happy and healthy. Please help us provide nutritious food for our animals by donating.",
   },
   {
-    image: "../../assets/images/pay2.png",
+    image: "assets/images/pay2.png",
     name: "Food image",
     svg: `
     <svg width="100" height="80" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +26,7 @@ const payArray = [
       "You can donate through your credit card without any fees. It is easy and safe. We do not keep donors' personal information on an online network. Choose an amount to give and the pet's name if needed. ",
   },
   {
-    image: "../../assets/images/pay3.png",
+    image: "assets/images/pay3.png",
     name: "A picture of an animal eating",
     svg: `
     <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
