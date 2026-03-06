@@ -1,19 +1,19 @@
 const linksArray = [
   {
     page: "about",
-    href: "#",
+    href: "../../index.html",
   },
   {
     page: "map",
-    href: "pages/map/index.html",
+    href: "../../pages/map/index.html",
   },
   {
     page: "zoos",
-    href: "pages/zoos/panda.html",
+    href: "#",
   },
   {
     page: "contact us",
-    href: "pages/contacts/index.html",
+    href: "../../pages/contacts/index.html",
   },
   {
     page: "design",
@@ -28,7 +28,7 @@ function createLink(link, extraClass) {
   const itemLink = document.createElement("a");
   itemLink.classList.add(`${extraClass}-link`, "nav-link");
 
-  if (link.page === "about") {
+  if (link.page === "zoos") {
     itemLink.classList.add("activ-page");
   }
 

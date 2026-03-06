@@ -9,7 +9,7 @@ const linksArray = [
   },
   {
     page: "zoos",
-    href: "../../pages/zoos/index.html",
+    href: "../../pages/zoos/panda.html",
   },
   {
     page: "contact us",
@@ -17,7 +17,7 @@ const linksArray = [
   },
   {
     page: "design",
-    href: "#",
+    href: "https://www.figma.com/design/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project?node-id=44-9749&t=DSDHyPzamUd7wD80-0",
   },
 ];
 
