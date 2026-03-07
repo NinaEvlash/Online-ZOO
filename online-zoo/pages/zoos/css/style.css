@@ -130,3 +130,73 @@
 .know__button:hover {
   color: var(--hover-orange-color);
 }
+
+.cams-panda-section {
+  position: relative;
+}
+
+.cams__panel {
+  position: absolute;
+  top: 110px;
+  left: 0;
+  background-color: var(--purple-color);
+  flex-direction: column;
+  width: 220px;
+}
+
+.cams__panel__item {
+  padding: 25px 50px;
+  display: flex;
+  border-top: 1px solid var(--white-color);
+  border-bottom: 1px solid var(--white-color);
+}
+
+.cams__panel__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--orange-color);
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.cams__panel__item-img {
+  width: 64px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.cams__panel__top-btn,
+.cams__panel__button-btn {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  height: 80px;
+}
+
+.cams__panel__top-btn {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.cams__panel__top-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 120px;
+  height: 38px;
+  background-color: var(--orange-color);
+  color: var(--white-color);
+  border-bottom-right-radius: 5px;
+}
