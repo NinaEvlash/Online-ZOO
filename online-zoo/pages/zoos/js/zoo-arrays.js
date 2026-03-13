@@ -68,6 +68,29 @@ export const animalPageArray = [
       },
     ],
   },
+  {
+    name: "lemur",
+    title: "lemurs cams",
+    image: "../../assets/images/youtube-player-lemur.png",
+    href: "#",
+    slider: [
+      {
+        nameCam: "Cam one",
+        imgCam: "../../assets/images/lemur-cam1.png",
+        hrefCam: "#",
+      },
+      {
+        nameCam: "Cam two",
+        imgCam: "../../assets/images/lemur-cam2.png",
+        hrefCam: "#",
+      },
+      {
+        nameCam: "Cam three",
+        imgCam: "../../assets/images/lemur-cam3.png",
+        hrefCam: "#",
+      },
+    ],
+  },
 ];
 
 export const panelAnimalArray = [
@@ -156,5 +179,19 @@ export const animalKnowArray = [
     range: "Western Africa",
     bottomDescr:
       "Western lowland gorillas are the smallest of the four subspecies. They live in thick tropical rainforests, where they find plenty of food for their vegetarian diet. They eat roots, shoots, fruit, wild celery, and tree bark and pulp. Gorillas can climb trees, but they’re usually found on the ground in communities—known as troops. Troops are led by one dominant, older adult male, often called a silverback because of the swath of silver hair that adorns his otherwise dark fur. Troops also include several other young males, some females, and their offspring. The leader organizes troop activities, such as eating, nesting in leaves, and moving about the group's home range. Gorillas prefer traveling on all fours, pushing themselves forward with their knuckles and soles of their feet. Female gorillas give birth to one infant after a pregnancy of nearly nine months. These infants ride on their mothers’ backs from the age of four months through the first two or three years of their lives.",
+  },
+  {
+    topDescr:
+      "A ring-tailed lemur mob will gather in open areas of the forest to sunbathe. They sit in what some call a 'yoga position' with their bellies toward the sun and their arms and legs stretched out to the sides. ",
+    image: "../../assets/images/zoo-lemur-know.png",
+    commonName: "Ring-Tailed Lemur",
+    scientificName: "Lemur catta",
+    type: "Mammals",
+    size: "Head and body: 17.75 inches; tail: 21.75 inches",
+    diet: "Herbivore",
+    habitat: "Arid, open areas and forests",
+    range: "Southeast Asia",
+    bottomDescr:
+      "Ring-tailed lemurs are named for the 13 alternating black and white bands that adorn their tails. Unlike most other lemurs, ringtails spend 40 percent of their time on the ground, moving quadrupedally along the forest floor. Ring-tailed lemurs live in southwestern Madagascar, in arid, open areas and forests in territories that range from 15 to 57 acres (0.06 to 0.2 square kilometers) in size. As with all lemurs, olfactory communication is important for ringtails. Ring-tailed lemurs have scent glands on their wrists and chests that they use to mark their foraging routes. Ringtails eat leaves, flowers and insects. They can also eat fruit, herbs and small vertebrates. Females usually give birth to their first baby when they are three years old, and usually once a year every year after that. All adult females participate in raising the offspring of the group. The median life expectancy for a ring-tailed lemur is about 16 years.",
   },
 ];
