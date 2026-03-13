@@ -45,6 +45,29 @@ export const animalPageArray = [
       },
     ],
   },
+  {
+    name: "gorillas",
+    title: "gorillas cams",
+    image: "../../assets/images/youtube-player-gorilla.png",
+    href: "#",
+    slider: [
+      {
+        nameCam: "Cam one",
+        imgCam: "../../assets/images/gorilla-cam1.png",
+        hrefCam: "#",
+      },
+      {
+        nameCam: "Cam two",
+        imgCam: "../../assets/images/gorilla-cam2.png",
+        hrefCam: "#",
+      },
+      {
+        nameCam: "Cam three",
+        imgCam: "../../assets/images/gorilla-cam3.png",
+        hrefCam: "#",
+      },
+    ],
+  },
 ];
 
 export const panelAnimalArray = [
@@ -119,5 +142,19 @@ export const animalKnowArray = [
     range: "Continental United States",
     bottomDescr:
       "The bald eagle, with its snowy-feathered (not bald) head and white tail, is the proud national bird symbol of the United States—yet the bird was nearly wiped out there. For many decades, bald eagles were hunted for sport and for the 'protection' of fishing grounds.  These powerful birds of prey use their talons to fish, but they get many of their meals by scavenging carrion or stealing the kills of other animals. They live near water and favor coasts and lakes where fish are plentiful, though they will also snare and eat small mammals. Bald eagles are believed to mate for life. A pair constructs an enormous stick nest—one of the bird-world's biggest—high above the ground and tends to a pair of eggs each year. Immature eagles are dark, and until they are about five years old, they lack the distinctive white markings that make their parents so easy to identify.",
+  },
+  {
+    topDescr:
+      "In addition to having distinctive fingerprints like humans do, gorillas also have unique nose prints. Gorillas are the largest of the great apes, but the western lowland gorilla is the smallest of the subspecies.",
+    image: "../../assets/images/zoo-gorilla-know.png",
+    commonName: "Western lowland gorillas",
+    scientificName: "Gorilla gorilla gorilla",
+    type: "Mammals",
+    size: "Standing height, four to six feet",
+    diet: "Omnivore",
+    habitat: "Rainforests",
+    range: "Western Africa",
+    bottomDescr:
+      "Western lowland gorillas are the smallest of the four subspecies. They live in thick tropical rainforests, where they find plenty of food for their vegetarian diet. They eat roots, shoots, fruit, wild celery, and tree bark and pulp. Gorillas can climb trees, but they’re usually found on the ground in communities—known as troops. Troops are led by one dominant, older adult male, often called a silverback because of the swath of silver hair that adorns his otherwise dark fur. Troops also include several other young males, some females, and their offspring. The leader organizes troop activities, such as eating, nesting in leaves, and moving about the group's home range. Gorillas prefer traveling on all fours, pushing themselves forward with their knuckles and soles of their feet. Female gorillas give birth to one infant after a pregnancy of nearly nine months. These infants ride on their mothers’ backs from the age of four months through the first two or three years of their lives.",
   },
 ];
