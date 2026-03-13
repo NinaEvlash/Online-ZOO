@@ -3,6 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="../landing/css/style.css" />
+    <link rel="stylesheet" href="../landing/css/media.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <link
       type="image/x-icon"
       href="../../assets/icons/favicon.png"
@@ -11,6 +22,110 @@
     <title>Eagles</title>
   </head>
   <body>
-    <p>This is a eagles page</p>
+    <header class="header">
+      <div class="header__container container flex">
+        <div class="header__logo">
+          <a class="logo-link" href="#">
+            <img
+              class="logo-img"
+              src="../../assets/icons/Logo.png"
+              alt="Header logo"
+            />
+          </a>
+        </div>
+        <nav id="header-menu" class="header__menu flex">
+          <ul
+            id="header-nav-list"
+            class="header__menu__list reset-list flex"
+          ></ul>
+        </nav>
+        <ul
+          id="header-social-list"
+          class="header__social__list social-links-list reset-list flex"
+        ></ul>
+        <div class="header__burger">
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <h1 class="hidden">Eagles page</h1>
+    <section class="cams">
+      <div id="cams-eagles-section" class="container"></div>
+    </section>
+    <section class="donation">
+      <div class="container">
+        <div class="donation__content flex">
+          <div class="donation__descr">
+            <h2 class="donation__title donation-zoo__title section-title">
+              Keep the Bald Eagle cams Streaming!
+            </h2>
+            <p class="donation__text donation-zoo__text section-text">
+              Watch as this lifelong pair of eagle parents lay and protect eggs,
+              feed their chicks and teach them to hunt and fly. Sam & Lora have
+              stolen the hearts of thousands of viewers! 100% of the donations
+              from this page will be utilized directly for the streaming and
+              operational costs of this project.
+            </p>
+          </div>
+          <div class="donation__btn__content zoo-donation-btn">
+            <p class="donation__btn__descr">Quick Donate</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="know">
+      <div id="know-eagles-section" class="container"></div>
+    </section>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div id="footer-top-panda" class="footer__container__top flex">
+          <div class="footer__logo flex">
+            <a class="logo-link" href="#">
+              <img
+                class="logo-img"
+                src="../../assets/icons/Logo-footer.png"
+                alt="Footer logo online zoo"
+              />
+            </a>
+            <a class="logo-link" href="#">
+              <img
+                class="logo-img"
+                src="../../assets/icons/Yem-Digital.png"
+                alt="Footer logo Yem Digital"
+              />
+            </a>
+            <a class="logo-link" href="#">
+              <img
+                class="logo-img"
+                src="../../assets/icons/rs-logo.png"
+                alt="Footer logo RS Shool"
+              />
+            </a>
+          </div>
+          <nav class="footer__menu flex">
+            <ul
+              id="footer-nav-list"
+              class="footer__menu__list menu-list reset-list flex"
+            ></ul>
+          </nav>
+        </div>
+        <div class="footer__container__bottom flex">
+          <ul class="footer__info__list reset-list flex">
+            <li class="footer__info__item section-text">© 2026</li>
+            <li class="footer__info__item section-text">© Yem Digital</li>
+            <li class="footer__info__item section-text">© RSSchool</li>
+          </ul>
+          <ul
+            id="footer-social-list"
+            class="footer__social__list social-links-list reset-list flex"
+          ></ul>
+        </div>
+      </div>
+    </footer>
+    <script defer src="js/nav-links.js"></script>
+    <script defer src="js/know.js"></script>
+    <script defer src="js/cams.js"></script>
+    <script defer src="../landing/js/social-links.js"></script>
+    <script defer src="../landing/js/burger.js"></script>
   </body>
 </html>

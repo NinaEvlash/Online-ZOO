@@ -1,27 +1,4 @@
-const caresArray = [
-  {
-    image: "assets/images/card-1.png",
-    text: "Your $30 could give Lucas a slice of panda cake, made with our secret recipe.",
-    href: "pages/zoos/panda.html",
-  },
-  {
-    image: "assets/images/card-2.png",
-    text: " Your $150 will help to care for Senja, a Sumatran tiger, for three weeks.",
-    href: "pages/zoos/tiger.html",
-  },
-  {
-    image: "assets/images/card-3.png",
-    text: "With your support, we can give Andy his favorite fruits. Especially when it's not fruit season in its natural habitat.",
-    href: "pages/zoos/lemur.html",
-  },
-  {
-    image: "assets/images/card-4.png",
-    text: "Sam & Lora have hatched and raised numerous young and will be happy with your help.",
-    href: "pages/zoos/eagles.html",
-  },
-];
-
-function createCareCard(care, index) {
+export function createCareCard(care, index) {
   const card = document.createElement("a");
   card.classList.add("care-card", `card-${index + 1}`, "card-animal", "flex");
 
@@ -66,11 +43,4 @@ function createCareCard(care, index) {
   card.append(cardImageContainer, content);
 
   return card;
-}
-
-const containerCareCards = document.getElementById("care-animal-cards");
-
-for (let i = 0; i < caresArray.length; i += 1) {
-  const card = createCareCard(caresArray[i], i);
-  containerCareCards.append(card);
 }

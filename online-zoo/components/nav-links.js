@@ -1,4 +1,4 @@
-const linksArray = [
+export const linksArray = [
   {
     page: "about",
     href: "../../index.html",
@@ -9,7 +9,7 @@ const linksArray = [
   },
   {
     page: "zoos",
-    href: "#",
+    href: "../../pages/zoos/panda.html",
   },
   {
     page: "contact us",
@@ -21,16 +21,12 @@ const linksArray = [
   },
 ];
 
-function createLink(link, extraClass) {
+export function createLink(link, extraClass) {
   const item = document.createElement("li");
   item.classList.add("menu-list-item");
 
   const itemLink = document.createElement("a");
   itemLink.classList.add(`${extraClass}-link`, "nav-link");
-
-  if (link.page === "zoos") {
-    itemLink.classList.add("activ-page");
-  }
 
   itemLink.href = link.href;
   itemLink.textContent = link.page;
@@ -39,14 +35,15 @@ function createLink(link, extraClass) {
   return item;
 }
 
-const headerNavList = document.getElementById("header-nav-list");
-linksArray.forEach((link) => {
-  const item = createLink(link, "header");
-  headerNavList.append(item);
-});
+export function setActiveNav() {
+  const links = document.querySelectorAll(".nav-link");
+  const currentPath = window.location.pathname;
 
-const footerNavList = document.getElementById("footer-nav-list");
-for (let i = 0; i < linksArray.length - 1; i += 1) {
-  const item = createLink(linksArray[i], "footer");
-  footerNavList.append(item);
+  links.forEach((link) => {
+    const linkPath = new URL(link.href).pathname;
+
+    if (linkPath === currentPath) {
+      link.classList.add("activ-page");
+    }
+  });
 }

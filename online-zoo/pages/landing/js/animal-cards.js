@@ -1,65 +1,4 @@
-const animalsArray = [
-  {
-    name: "Lucas",
-    image: "assets/images/panda.png",
-    title: "Giant Panda",
-    text: "Native to central China, giant pandas have come to symbolize vulnerable species.",
-    href: "pages/zoos/panda.html",
-  },
-  {
-    name: "Sam & Lora",
-    image: "assets/images/eagles.png",
-    title: "West End Bald Eagles",
-    text: "Pair of eagle parents lay and protect eggs, feed their chicks and teach them to hunt and fly.",
-    href: "pages/zoos/eagles.html",
-  },
-  {
-    name: "Andy",
-    image: "assets/images/lemur.png",
-    title: "Madagascarian Lemur ",
-    text: "Lemurs are considered the world’s most endangered group of mammals.",
-    href: "pages/zoos/lemur.html",
-  },
-  {
-    name: " Liz",
-    image: "assets/images/koala.png",
-    title: "Australian Koala",
-    text: "The elevated walkways bring you to eye level with the koalas as they perch in their forest.",
-    href: "pages/zoos/koala.html",
-  },
-  {
-    name: "Glen",
-    image: "assets/images/gorilla.png",
-    title: "Gorilla in Congo ",
-    text: "Variety of snacks very important for the healthy life of gorillas and his plenty of babies.",
-    href: "pages/zoos/gorillas.html",
-  },
-  {
-    name: "Shake",
-    image: "assets/images/lion.png",
-    title: "African Lion",
-    text: "Lions roam the savannas and grasslands of Africa, hunting and raising cubs in the pride.",
-    href: "pages/zoos/lion.html",
-  },
-  {
-    name: "Mike",
-    image: "assets/images/crocodile.png",
-    title: "Chinese Alligator",
-    text: "From nose to tail, belly to back, hard scales protect this petite alligator.",
-    href: "pages/zoos/crocodile.html",
-  },
-  {
-    name: " Senja",
-    image: "assets/images/tiger.png",
-    title: "Sumatran Tiger",
-    text: "Sumatran Tigers are the smallest of the five sub-species, and are found in Indonesia.",
-    href: "pages/zoos/tiger.html",
-  },
-];
-
-const container = document.getElementById("sliders-container");
-
-function createCard(animal) {
+export function createCard(animal) {
   const card = document.createElement("a");
   card.classList.add("card-animal-slider", "card-animal", "flex");
 
@@ -114,8 +53,3 @@ function createCard(animal) {
 
   return card;
 }
-
-animalsArray.forEach((animal) => {
-  const card = createCard(animal);
-  container.append(card);
-});

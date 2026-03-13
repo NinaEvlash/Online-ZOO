@@ -1,4 +1,4 @@
-socialLinksArray = [
+export const socialLinksArray = [
   {
     href: "https://www.youtube.com/",
     svg: `
@@ -51,7 +51,7 @@ socialLinksArray = [
   },
 ];
 
-function createSocialLink(link) {
+export function createSocialLink(link) {
   const item = document.createElement("li");
   item.classList.add("social-links-item");
 
@@ -66,15 +66,3 @@ function createSocialLink(link) {
   item.append(itemLink);
   return item;
 }
-
-const headerSocialList = document.getElementById("header-social-list");
-socialLinksArray.forEach((link) => {
-  const item = createSocialLink(link);
-  headerSocialList.append(item);
-});
-
-const footerSocialList = document.getElementById("footer-social-list");
-socialLinksArray.forEach((link) => {
-  const item = createSocialLink(link);
-  footerSocialList.append(item);
-});

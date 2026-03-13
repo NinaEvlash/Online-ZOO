@@ -1,8 +1,14 @@
-function createSliderButton(type, customClass) {
+export function createButton(text, extraClass) {
   const button = document.createElement("button");
-  button.classList.add(`${type}-button`, "reset-btn", customClass);
+  button.classList.add(`${extraClass}__button`, "reset-btn", "section-btn");
 
-  button.innerHTML = `
+  const spanText = document.createElement("span");
+  spanText.classList.add(`${extraClass}-button-text`);
+  spanText.textContent = text;
+
+  const spanIcon = document.createElement("span");
+  spanIcon.classList.add(`${extraClass}-button-icon`);
+  spanIcon.innerHTML = `
   <svg
     width="25"
     height="22"
@@ -19,20 +25,6 @@ function createSliderButton(type, customClass) {
   </svg>
   `;
 
+  button.append(spanText, spanIcon);
   return button;
 }
-
-const sliderButtonsMeetPets = document.getElementById("pets-slider-buttons");
-
-const prevButtonPets = createSliderButton("prev", "pets__slider__prev-btn");
-prevButtonPets.disabled = true;
-const nextButtonPets = createSliderButton("next", "pets__slider__next-btn");
-
-sliderButtonsMeetPets.append(prevButtonPets, nextButtonPets);
-
-const sliderButtonsUsers = document.getElementById("users-slider-buttons");
-
-const prevButtonUsers = createSliderButton("prev", "users__slider__prev-btn");
-const nextButtonUsers = createSliderButton("next", "users__slider__next-btn");
-
-sliderButtonsUsers.append(prevButtonUsers, nextButtonUsers);

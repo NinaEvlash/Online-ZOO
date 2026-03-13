@@ -1,4 +1,4 @@
-const usersArray = [
+export const usersArray = [
   {
     name: "Karen Maithlan",
     title: "New Jersey, June 2020",
@@ -21,7 +21,7 @@ const usersArray = [
   },
 ];
 
-function createUserCard(user) {
+export function createUserCard(user) {
   const card = document.createElement("li");
   card.classList.add("user__card");
 
@@ -52,10 +52,3 @@ function createUserCard(user) {
 
   return card;
 }
-
-const userSlider = document.getElementById("users-slider");
-
-usersArray.forEach((user) => {
-  const card = createUserCard(user);
-  userSlider.append(card);
-});

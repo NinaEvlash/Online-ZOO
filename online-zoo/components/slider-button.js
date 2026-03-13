@@ -1,14 +1,8 @@
-function createButton(text, extraClass) {
+export function createSliderButton(type, customClass) {
   const button = document.createElement("button");
-  button.classList.add(`${extraClass}__button`, "reset-btn", "section-btn");
+  button.classList.add(`${type}-button`, "reset-btn", customClass);
 
-  const spanText = document.createElement("span");
-  spanText.classList.add(`${extraClass}-button-text`);
-  spanText.textContent = text;
-
-  const spanIcon = document.createElement("span");
-  spanIcon.classList.add(`${extraClass}-button-icon`);
-  spanIcon.innerHTML = `
+  button.innerHTML = `
   <svg
     width="25"
     height="22"
@@ -25,10 +19,5 @@ function createButton(text, extraClass) {
   </svg>
   `;
 
-  button.append(spanText, spanIcon);
   return button;
 }
-
-const footerTop = document.getElementById("footer-top");
-const buttonFooter = createButton("donate for volunteers", "footer");
-footerTop.append(buttonFooter);

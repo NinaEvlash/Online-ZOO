@@ -155,18 +155,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--orange-color);
-  width: 104px;
-  height: 104px;
-  border-radius: 50%;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-
-.cams__panel__item-img {
-  width: 64px;
-  height: 60px;
-  object-fit: cover;
 }
 
 .cams__panel__top-btn,
@@ -199,4 +187,76 @@
   background-color: var(--orange-color);
   color: var(--white-color);
   border-bottom-right-radius: 5px;
+}
+
+.cams__panel__item-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--orange-color);
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+.cams__panel__item:first-child .cams__panel__item-img {
+  background-color: var(--white-color);
+  border: 1px solid var(--white-color);
+  background-clip: content-box;
+  padding: 4px;
+}
+
+.cams__panel__item:not(:first-child) .cams__panel__item-img:hover {
+  filter: brightness(130%);
+}
+
+.cams__panel__item-img svg path {
+  fill: var(--black-color);
+}
+
+.cams__panel__text {
+  display: none;
+  color: var(--white-color);
+}
+
+.cams__panel--open .cams__panel__top-btn svg {
+  transform: rotate(180deg);
+}
+
+.cams__panel--open .cams__panel__text {
+  display: block;
+}
+
+.cams__panel--open {
+  width: 300px;
+}
+
+.cams__panel--open .cams__panel__item-img {
+  background-color: transparent;
+}
+
+.cams__panel--open .cams__panel__item-img svg path {
+  fill: var(--orange-color);
+}
+
+.cams__panel--open .cams__panel__item {
+  padding-left: 25px;
+  padding-right: 17px;
+}
+
+.cams__panel--open .cams__panel__item:first-child .cams__panel__item-img {
+  background-color: transparent;
+  border: none;
+}
+
+.cams__panel--open
+  .cams__panel__item:first-child
+  .cams__panel__item-img
+  svg
+  path {
+  fill: var(--white-color);
 }
