@@ -17,6 +17,7 @@ export function createLeftPanel(animalArray) {
   animalArray.forEach((animal) => {
     const item = document.createElement("li");
     item.classList.add("cams__panel__item");
+    item.dataset.animal = animal.name;
 
     const link = document.createElement("a");
     link.classList.add("cams__panel__link");

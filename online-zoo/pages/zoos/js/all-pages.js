@@ -87,3 +87,12 @@ export function createAllPagesContent(pageName, num) {
         .classList.toggle("cams__panel--open");
     });
 }
+
+export function changeListOrder(list, selector) {
+  const target = list.querySelector(selector);
+  if (!target) return;
+
+  while (list.firstElementChild !== target) {
+    list.append(list.firstElementChild);
+  }
+}
