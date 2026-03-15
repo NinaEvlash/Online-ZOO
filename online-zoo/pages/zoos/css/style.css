@@ -136,17 +136,19 @@
   color: var(--hover-orange-color);
 }
 
-.cams-panda-section {
-  position: relative;
-}
-
 .cams__panel {
-  position: absolute;
+  position: fixed;
+  z-index: 1000;
   top: 110px;
   left: 0;
   background-color: var(--purple-color);
   flex-direction: column;
   width: 220px;
+  transition: top 0.2s ease-in-out;
+}
+
+.header-hidden .cams__panel {
+  top: 0;
 }
 
 .cams__panel__item {

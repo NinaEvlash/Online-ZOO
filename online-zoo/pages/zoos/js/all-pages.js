@@ -86,6 +86,14 @@ export function createAllPagesContent(pageName, num) {
         .querySelector(".cams__panel")
         .classList.toggle("cams__panel--open");
     });
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 110) {
+      document.body.classList.add("header-hidden");
+    } else {
+      document.body.classList.remove("header-hidden");
+    }
+  });
 }
 
 export function changeListOrder(list, selector) {
