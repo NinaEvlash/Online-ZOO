@@ -10,6 +10,11 @@ body.lock {
   overflow: hidden;
 }
 
+html.modal-lock,
+body.modal-lock {
+  overflow: hidden;
+}
+
 *,
 *::before,
 *::after {
@@ -32,6 +37,7 @@ svg {
   --orange-color: #f58021;
   --hover-orange-color: #d26004;
   --teal-color: #00a092;
+  --teal-hover-color: #05786e;
   --purple-color: #20113d;
 }
 
@@ -877,4 +883,86 @@ button:disabled {
 
 .footer__social__list {
   gap: 40px;
+}
+
+/*======modal======*/
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease;
+}
+
+.modal-box {
+  position: relative;
+  width: 1160px;
+  height: auto;
+  z-index: 1;
+  border-radius: 5px;
+  background-color: var(--white-color);
+  box-shadow: 0px 0px 17px -7px rgba(34, 60, 80, 0.2);
+  transform: scale(0);
+  transition: transform 0.8s;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.modal-descr {
+  padding-top: 20px;
+  width: 678px;
+  margin: 0 auto;
+}
+
+.modal-descr-title {
+  text-align: center;
+  color: var(--orange-color);
+  margin-bottom: 30px;
+}
+
+.modal-descr-text {
+  text-align: center;
+}
+
+.modal-buttons-wrapper {
+  padding: 50px 80px;
+  gap: 40px;
+  justify-content: center;
+}
+
+.modal-button {
+  padding: 21px;
+  background-color: var(--teal-color);
+  border-radius: 5px;
+  color: var(--white-color);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.modal-button:hover {
+  background-color: var(--teal-hover-color);
+}
+
+.modal.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal.open .modal-box {
+  transform: scale(1);
 }

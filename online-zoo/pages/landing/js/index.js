@@ -17,6 +17,10 @@ import { createButton } from "../../../components/section-button.js";
 import { createSliderButton } from "../../../components/slider-button.js";
 import { sliderMove } from "./slider.js";
 import { createUserCard, usersArray } from "./users-cards.js";
+import {
+  createCareModal,
+  createModalLogic,
+} from "../../../components/modal-one.js";
 
 const headerLandingNavList = document.getElementById("header-landing-nav-list");
 linksArray.forEach((link) => {
@@ -119,3 +123,9 @@ footerTop.append(buttonFooter);
 
 sliderMove();
 createBurger();
+
+const modalContainer = document.getElementById("landing-modal");
+const modal = createCareModal();
+modalContainer.append(modal);
+
+createModalLogic();
