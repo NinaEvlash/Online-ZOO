@@ -1,3 +1,7 @@
+/** {
+  outline: 1px solid red;
+}*/
+
 :root {
   --white-color: #ffffff;
   --black-color: #000000;
@@ -8,17 +12,17 @@
 }
 
 .cams {
-  padding-bottom: 100px;
+  padding-bottom: 148px;
 }
 
 .zoo-donate__top__content {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 60px;
+  padding-bottom: 47px;
   justify-content: flex-end;
 }
 
 .zoo-donate__title {
-  margin-right: 70px;
+  margin-right: 200px;
 }
 
 .zoo-cams__button {
@@ -43,32 +47,46 @@
   text-align: center;
 }
 
+.zoo-donate__bottom-content {
+  padding-top: 94px;
+}
+
 .cams__slider__container {
-  justify-content: space-between;
+  justify-content: center;
+  padding-left: 110px;
+  gap: 16px;
 }
 
 .cams-slider-btn {
   border-color: transparent;
+  align-self: center;
 }
 
 .cams__slider {
-  gap: 20px;
+  gap: 40px;
+}
+
+.donation-zoo__title {
+  margin-bottom: 24px;
 }
 
 .donation-zoo__text {
-  width: 776px;
+  width: 874px;
 }
 
 .know {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 159px;
+  padding-bottom: 147px;
 }
 
 .zoo-know__card {
   margin: 0 auto;
-  margin-bottom: 100px;
-  width: 930px;
-  padding: 30px 95px;
+  margin-bottom: 134px;
+  width: 1040px;
+  padding-top: 49px;
+  padding-bottom: 56px;
+  padding-left: 47px;
+  padding-right: 50px;
   border-radius: 5px;
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
 }
@@ -76,6 +94,8 @@
 .zoo-know__card-title {
   margin-bottom: 20px;
   text-align: center;
+  font-weight: 500;
+  font-size: 42px;
 }
 
 .zoo-know__card-descr {
@@ -84,9 +104,13 @@
 
 .animal-card__info {
   display: flex;
-  gap: 240px;
+  gap: 266px;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 64px;
+}
+
+.animal-card__stats {
+  margin: 0;
 }
 
 .animal-card__image {
@@ -152,7 +176,7 @@
 }
 
 .cams__panel__item {
-  padding: 25px 50px;
+  padding: 33px 55px;
   display: flex;
   border-top: 1px solid var(--white-color);
   border-bottom: 1px solid var(--white-color);
