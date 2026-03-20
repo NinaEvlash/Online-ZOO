@@ -190,6 +190,10 @@
     width: 78px;
   }
 
+  .cams__panel--open {
+    width: 370px;
+  }
+
   .cams__panel__item-img svg {
     width: 40px;
     height: 30px;
