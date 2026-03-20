@@ -25,15 +25,21 @@
   margin-right: 200px;
 }
 
-.zoo-cams__button {
+.zoo-cams__button,
+.zoo-cams-640__button {
   color: var(--white-color);
   background-color: var(--orange-color);
   padding: 17px 34px;
   transition: background-color 0.3s ease-in-out;
 }
 
-.zoo-cams__button:hover {
+.zoo-cams__button:hover,
+.zoo-cams-640__button:hover {
   background-color: var(--hover-orange-color);
+}
+
+.zoo-cams-640__button {
+  display: none;
 }
 
 .zoo-donate__bottom-itle {

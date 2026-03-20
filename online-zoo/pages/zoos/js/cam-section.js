@@ -8,7 +8,9 @@ export function createCamsSection(animal) {
   const { topWrapper, imageWrapper } = createTopContent(animal);
   const bottomWrapper = createBottomContent(animal);
 
-  donateContainer.append(topWrapper, imageWrapper, bottomWrapper);
+  const button = createButton("donate now", "zoo-cams-640");
+
+  donateContainer.append(topWrapper, imageWrapper, button, bottomWrapper);
 
   return donateContainer;
 }
