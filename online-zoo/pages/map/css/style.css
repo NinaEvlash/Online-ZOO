@@ -1,0 +1,97 @@
+:root {
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --orange-color: #f58021;
+  --hover-orange-color: #d26004;
+  --teal-color: #00a092;
+  --purple-color: #20113d;
+}
+
+.container {
+  padding-left: 250px;
+  padding-right: 270px;
+}
+
+.map {
+  padding-top: 40px;
+  padding-bottom: 150px;
+}
+
+.map__title {
+  padding-left: 40px;
+  color: var(--purple-color);
+  line-height: 120%;
+  width: 601px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.map__container {
+  position: relative;
+  overflow: hidden;
+  width: 1400px;
+  height: 912px;
+  margin: 0 auto;
+}
+
+.map-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.map__marker {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.map__marker img {
+  transition: filter 0.3s ease;
+}
+
+.map__marker:hover img {
+  filter: brightness(130%);
+}
+
+.map__marker--eagles {
+  top: 41%;
+  left: 9%;
+}
+
+.map__marker--crocodile {
+  top: 43%;
+  left: 19%;
+}
+
+.map__marker--lion {
+  top: 48%;
+  left: 39%;
+}
+
+.map__marker--gorilla {
+  top: 50%;
+  left: 47%;
+}
+
+.map__marker--lemur {
+  top: 63%;
+  left: 55%;
+}
+
+.map__marker--panda {
+  top: 37%;
+  left: 66%;
+}
+
+.map__marker--tiger {
+  top: 54%;
+  left: 70%;
+}
+
+.map__marker--koala {
+  top: 66%;
+  left: 80%;
+}

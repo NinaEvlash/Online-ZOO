@@ -1,0 +1,336 @@
+@media (max-width: 1910px) {
+  .cams__panel {
+    width: 115px;
+  }
+
+  .cams__panel--open {
+    width: 300px;
+  }
+
+  .cams__panel__top-content {
+    display: none;
+  }
+
+  .cams__panel__top-btn {
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .cams__panel__item {
+    padding: 0;
+    height: 171px;
+  }
+
+  .cams__panel__item-img {
+    background-color: transparent;
+  }
+
+  .cams__panel__item-img svg path {
+    fill: var(--orange-color);
+  }
+
+  .cams__panel__item:first-child .cams__panel__item-img {
+    background-color: transparent;
+    border: none;
+  }
+
+  .cams__panel__item:first-child .cams__panel__item-img svg path {
+    fill: var(--white-color);
+  }
+
+  .cams__panel__item-img svg {
+    width: 60px;
+    height: 40px;
+  }
+
+  .cams__slider__container {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 1725px) {
+  .container {
+    padding-left: 135px;
+    padding-right: 40px;
+  }
+
+  .container-player-foto {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 1485px) {
+  .container {
+    padding-left: 40px;
+  }
+
+  .zoo-donate__container {
+    padding-left: 95px;
+  }
+
+  .donation__content-zoo {
+    padding: 0;
+  }
+
+  .donation-zoo__text {
+    width: 739px;
+  }
+}
+
+@media (max-width: 1210px) {
+  .header__container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .zoo-donate__top__content {
+    padding-top: 35px;
+    padding-bottom: 25px;
+  }
+
+  .zoo-donate__title {
+    margin-right: 72px;
+  }
+
+  .container-player-foto {
+    display: block;
+    width: 1025px;
+    height: 760px;
+  }
+
+  .player-foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .zoo-donate__bottom-content {
+    padding-top: 20px;
+  }
+
+  .zoo-donate__bottom-itle {
+    margin-top: 0;
+  }
+
+  .cams {
+    padding-bottom: 100px;
+  }
+
+  .cams__slider a {
+    display: block;
+    width: 265px;
+    height: 209px;
+  }
+
+  .cams__slider a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .cams__slider {
+    gap: 20px;
+  }
+
+  .donation {
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
+
+  .donation__descr {
+    width: auto;
+  }
+
+  .know {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .zoo-know__card {
+    width: 930px;
+    padding: 35px 95px;
+    margin-bottom: 95px;
+  }
+
+  .zoo-know__card-title {
+    margin-bottom: 25px;
+  }
+
+  .animal-card__info {
+    gap: 214px;
+    margin-bottom: 52px;
+  }
+
+  .animal-card__image {
+    width: 454px;
+    height: 453px;
+  }
+
+  .zoo-know__text {
+    width: auto;
+  }
+}
+
+@media (max-width: 1150px) {
+  .zoo-cams__button {
+    display: none;
+  }
+
+  .zoo-cams-640__button {
+    display: flex;
+    margin-left: auto;
+    padding: 14px 23px;
+  }
+
+  .zoo-donate__container {
+    padding-left: 0;
+  }
+
+  .cams__panel {
+    width: 78px;
+  }
+
+  .cams__panel--open {
+    width: 370px;
+  }
+
+  .cams__panel__item-img svg {
+    width: 40px;
+    height: 30px;
+  }
+
+  .cams__panel__link {
+    width: 100%;
+  }
+
+  .cams__panel__top-btn,
+  .cams__panel__button-btn {
+    height: 50px;
+  }
+
+  .cams__panel__item {
+    height: 100px;
+  }
+
+  .cams-slider-btn {
+    display: none;
+  }
+
+  .cams__slider a {
+    width: 50%;
+    height: auto;
+  }
+
+  .cams__slider__container {
+    justify-content: flex-end;
+  }
+
+  .zoo-donate__title {
+    margin-right: 0;
+  }
+
+  .zoo-donate__top__content {
+    justify-content: center;
+  }
+
+  .zoo-donate__title {
+    font-weight: 500;
+    font-size: 42px;
+  }
+
+  .container-player-foto {
+    margin-bottom: 20px;
+    width: 95%;
+    height: auto;
+  }
+
+  .donation__content-zoo {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .donation-zoo__title {
+    text-align: center;
+    margin-bottom: 41px;
+  }
+
+  .donation-zoo__text {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .zoo-donation-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .zoo-know__card {
+    width: 600px;
+    padding: 39px 47px;
+    margin-bottom: 86px;
+  }
+
+  .animal-card__stats div {
+    margin-bottom: 21px;
+  }
+
+  .animal-card__info {
+    flex-direction: column-reverse;
+    gap: 80px;
+    margin-bottom: 50px;
+    align-items: flex-start;
+  }
+
+  .animal-card__image {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header__container {
+    padding-left: 15px;
+  }
+
+  .container-player-foto {
+    width: 542px;
+    height: 402px;
+    margin-bottom: 10px;
+  }
+
+  .cams {
+    padding-bottom: 80px;
+  }
+
+  .cams__slider a {
+    width: 135px;
+    height: 106px;
+  }
+
+  .zoo-donate__bottom-itle {
+    padding-right: 100px;
+    font-weight: 500;
+    font-size: 26px;
+    text-transform: lowercase;
+  }
+
+  .zoo-donate__bottom-itle::first-letter {
+    text-transform: uppercase;
+  }
+
+  .donation {
+    padding-top: 58px;
+    padding-bottom: 51px;
+  }
+
+  .know {
+    padding-top: 79px;
+  }
+}

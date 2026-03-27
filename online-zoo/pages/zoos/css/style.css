@@ -1,0 +1,299 @@
+/** {
+  outline: 1px solid red;
+}*/
+
+:root {
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --orange-color: #f58021;
+  --hover-orange-color: #d26004;
+  --teal-color: #00a092;
+  --purple-color: #20113d;
+}
+
+.cams {
+  padding-bottom: 148px;
+}
+
+.zoo-donate__top__content {
+  padding-top: 60px;
+  padding-bottom: 47px;
+  justify-content: flex-end;
+}
+
+.zoo-donate__title {
+  margin-right: 200px;
+}
+
+.zoo-cams__button,
+.zoo-cams-640__button {
+  color: var(--white-color);
+  background-color: var(--orange-color);
+  padding: 17px 34px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.zoo-cams__button:hover,
+.zoo-cams-640__button:hover {
+  background-color: var(--hover-orange-color);
+}
+
+.zoo-cams-640__button {
+  display: none;
+}
+
+.zoo-donate__bottom-itle {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 100%;
+  text-align: center;
+}
+
+.zoo-donate__bottom-content {
+  padding-top: 94px;
+}
+
+.cams__slider__container {
+  justify-content: center;
+  padding-left: 110px;
+  gap: 16px;
+}
+
+.cams-slider-btn {
+  border-color: transparent;
+  align-self: center;
+}
+
+.cams__slider {
+  gap: 40px;
+}
+
+.donation-zoo__title {
+  margin-bottom: 24px;
+}
+
+.donation-zoo__text {
+  width: 874px;
+}
+
+.know {
+  padding-top: 159px;
+  padding-bottom: 147px;
+}
+
+.zoo-know__card {
+  margin: 0 auto;
+  margin-bottom: 134px;
+  width: 1040px;
+  padding-top: 49px;
+  padding-bottom: 56px;
+  padding-left: 47px;
+  padding-right: 50px;
+  border-radius: 5px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+}
+
+.zoo-know__card-title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 42px;
+}
+
+.zoo-know__card-descr {
+  text-align: center;
+}
+
+.animal-card__info {
+  display: flex;
+  gap: 266px;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.animal-card__stats {
+  margin: 0;
+}
+
+.animal-card__image {
+  width: 440px;
+  height: 440px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.animal-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.animal-card__stats div {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.animal-card__stats dt {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 130%;
+  color: var(--black-color);
+}
+
+.animal-card__stats dd {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--black-color);
+}
+
+.zoo-know__text {
+  width: 1154px;
+}
+
+.know__button {
+  margin-left: 60px;
+  color: var(--orange-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.know__button:hover {
+  color: var(--hover-orange-color);
+}
+
+.cams__panel {
+  position: fixed;
+  z-index: 1000;
+  top: 110px;
+  left: 0;
+  background-color: var(--purple-color);
+  flex-direction: column;
+  width: 220px;
+  transition: top 0.2s ease-in-out;
+}
+
+.header-hidden .cams__panel {
+  top: 0;
+}
+
+.cams__panel__item {
+  padding: 33px 55px;
+  display: flex;
+  border-top: 1px solid var(--white-color);
+  border-bottom: 1px solid var(--white-color);
+}
+
+.cams__panel__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cams__panel__top-btn,
+.cams__panel__button-btn {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  height: 80px;
+}
+
+.cams__panel__top-btn {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.cams__panel__top-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 120px;
+  height: 38px;
+  background-color: var(--orange-color);
+  color: var(--white-color);
+  border-bottom-right-radius: 5px;
+}
+
+.cams__panel__item-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--orange-color);
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+.cams__panel__item:first-child .cams__panel__item-img {
+  background-color: var(--white-color);
+  border: 1px solid var(--white-color);
+  background-clip: content-box;
+  padding: 4px;
+}
+
+.cams__panel__item:not(:first-child) .cams__panel__item-img:hover {
+  filter: brightness(130%);
+}
+
+.cams__panel__item-img svg path {
+  fill: var(--black-color);
+}
+
+.cams__panel__text {
+  display: none;
+  color: var(--white-color);
+}
+
+.cams__panel--open .cams__panel__top-btn svg {
+  transform: rotate(180deg);
+}
+
+.cams__panel--open .cams__panel__text {
+  display: block;
+}
+
+.cams__panel--open {
+  width: 300px;
+}
+
+.cams__panel--open .cams__panel__item-img {
+  background-color: transparent;
+}
+
+.cams__panel--open .cams__panel__item-img svg path {
+  fill: var(--orange-color);
+}
+
+.cams__panel--open .cams__panel__item {
+  padding-left: 25px;
+  padding-right: 17px;
+}
+
+.cams__panel--open .cams__panel__item:first-child .cams__panel__item-img {
+  background-color: transparent;
+  border: none;
+}
+
+.cams__panel--open
+  .cams__panel__item:first-child
+  .cams__panel__item-img
+  svg
+  path {
+  fill: var(--white-color);
+}

@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="../landing/css/style.css" />
+    <link rel="stylesheet" href="../landing/css/media.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link
+      type="image/x-icon"
+      href="../../assets/icons/favicon.png"
+      rel="shortcut icon"
+    />
+    <title>Contact us</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container flex">
+        <div class="header__logo">
+          <a class="logo-link" href="#">
+            <img
+              class="logo-img"
+              src="../../assets/icons/Logo.png"
+              alt="Header logo"
+            />
+          </a>
+        </div>
+        <nav class="header__menu flex">
+          <ul
+            id="header-contacts-nav-list"
+            class="header__menu__list reset-list flex"
+          ></ul>
+        </nav>
+        <ul
+          id="header-contacts-social-list"
+          class="header__social__list social-links-list reset-list flex"
+        ></ul>
+        <div class="header__burger">
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <h1 class="hidden">Contact us</h1>
+
+    <section class="decor">
+      <div class="container">
+        <div class="contacts__decor">
+          <img
+            class="contacts-foto"
+            src="../../assets/images/contacts-img.jpg"
+            alt="Decor foto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts__section">
+      <div class="container">
+        <div class="contacts__content flex">
+          <div class="contacts__content-descr">
+            <h2 class="contacts__content__title section-title">Get in touch</h2>
+            <p class="contacts__content__text section-text">
+              Whether you have a question, or would like to say hello, we're
+              happy to hear from you. Please use the form to send us a message
+              and we'll get back to you as soon as we can. Whether you have a
+              question, or would like to say hello, we're happy to hear from
+              you. Please use the form to send us a message and we'll get back
+              to you as soon as we can.
+            </p>
+          </div>
+          <div id="contacts-form" class="contacts__content-form">
+            <form class="form flex" action="/submit" method="post">
+              <label class="label section-text" for="name">
+                <span class="star">*</span>
+                <span class="label-text"> Your Name </span>
+              </label>
+              <input
+                class="input"
+                id="name"
+                type="text"
+                name="username"
+                placeholder="First and last name"
+              />
+              <label class="label section-text" for="email">
+                <span class="star">*</span>
+                <span class="label-text">Your Email Address</span>
+              </label>
+              <input
+                class="input"
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+              <label class="label section-text" for="subject">
+                <span class="star">*</span>
+                <span class="label-text">Subject</span>
+              </label>
+              <input
+                class="input"
+                id="subject"
+                type="text"
+                name="subject"
+                placeholder="Enter the subject"
+              />
+              <label class="label section-text" for="message">
+                <span class="star">*</span>
+                <span class="label-text">Message</span>
+              </label>
+              <textarea
+                class="textarea"
+                id="message"
+                type="message"
+                name="message"
+                placeholder="Enter your message"
+              ></textarea>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div id="footer-top-contacts" class="footer__container__top flex">
+          <div class="footer__logo flex">
+            <a class="logo-link" href="#">
+              <img
+                class="logo-img"
+                src="../../assets/icons/Logo-footer.png"
+                alt="Footer logo online zoo"
+              />
+            </a>
+            <a class="logo-link" href="#">
+              <img
+                class="logo-img"
+                src="../../assets/icons/Yem-Digital.png"
+                alt="Footer logo Yem Digital"
+              />
+            </a>
+            <a class="logo-link" href="#">
+              <img
+                class="logo-img"
+                src="../../assets/icons/rs-logo.png"
+                alt="Footer logo RS Shool"
+              />
+            </a>
+          </div>
+          <nav class="footer__menu flex">
+            <ul
+              id="footer-contacts-nav-list"
+              class="footer__menu__list menu-list reset-list flex"
+            ></ul>
+          </nav>
+        </div>
+        <div class="footer__container__bottom flex">
+          <ul class="footer__info__list reset-list flex">
+            <li class="footer__info__item section-text">© 2026</li>
+            <li class="footer__info__item section-text">© Yem Digital</li>
+            <li class="footer__info__item section-text">© RSSchool</li>
+          </ul>
+          <ul
+            id="footer-contacts-social-list"
+            class="footer__social__list social-links-list reset-list flex"
+          ></ul>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
